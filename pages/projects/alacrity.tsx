@@ -1,8 +1,7 @@
 import css from 'styled-jsx/css';
+import { ProjectImages } from '../../components/project-image';
 
-export type AlacrityProps = {};
-
-const Alacrity = (): React.ReactElement<AlacrityProps> => {
+const Alacrity = (): React.ReactElement => {
   return (
     <div className="container">
       <style jsx>{style}</style>
@@ -28,13 +27,16 @@ const Alacrity = (): React.ReactElement<AlacrityProps> => {
         Presentation of the work was made possible thanks to the{' '}
         <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
       </div>
+      <ProjectImages images={[{ src: '/images/projects/alacrity/alacrity1.png' }]}></ProjectImages>
     </div>
   );
 };
 
 const style = css`
   .container {
-    margin: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
     color: black;
     font-family: sans-serif;
     font-size: 20px;
