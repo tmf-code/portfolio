@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const Home = () => (
   <div className="container">
@@ -13,7 +13,7 @@ const Home = () => (
       </h1>
 
       <p className="description">
-        Get started by editing <code>pages/index.js</code>
+        Get started by editing <code>pages/index.tsx</code>
       </p>
 
       <div className="grid">
@@ -198,6 +198,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
