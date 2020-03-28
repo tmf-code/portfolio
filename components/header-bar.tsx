@@ -7,13 +7,8 @@ const defaultHeaderBarProps = {
   leftLinks: [
     { href: '/', text: 'Home' },
     { href: '/projects', text: 'Work' },
-    { href: '/about', text: 'About' },
   ],
-  rightLinks: [
-    { href: '/', text: 'Home' },
-    { href: '/projects', text: 'Work' },
-    { href: '/about', text: 'About' },
-  ],
+  rightLinks: [{ href: '/about', text: 'About' }],
 };
 
 export const HeaderBar = ({ leftLinks, rightLinks }: HeaderBarProps): React.ReactElement => {
