@@ -28,10 +28,15 @@ const style = css`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-image: url(/images/projects/coast/coast.jpg);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
   }
   ul li {
     display: inline;
+    margin: 0;
+    padding: 0;
   }
   a {
     margin-left: 10px;
