@@ -1,37 +1,26 @@
 import css from 'styled-jsx/css';
+import { makeList } from '../utility/makeList';
 
 export type HeaderBarProps = typeof defaultHeaderBarProps;
 
 const defaultHeaderBarProps = {
   leftLinks: [
-    <a key={0} href="/">
-      Home
-    </a>,
-    <a key={1} href="/projects">
-      Work
-    </a>,
-    <a key={2} href="/about">
-      About
-    </a>,
+    { href: '/', text: 'Home' },
+    { href: '/projects', text: 'Work' },
+    { href: '/about', text: 'About' },
   ],
   rightLinks: [
-    <a key={0} href="/">
-      Home
-    </a>,
-    <a key={1} href="/projects">
-      Work
-    </a>,
-    <a key={2} href="/about">
-      About
-    </a>,
+    { href: '/', text: 'Home' },
+    { href: '/projects', text: 'Work' },
+    { href: '/about', text: 'About' },
   ],
 };
 
 export const HeaderBar = ({ leftLinks, rightLinks }: HeaderBarProps): React.ReactElement => {
   return (
     <div className="container">
-      <div className="left-links">{leftLinks}</div>
-      <div className="right-links">{rightLinks}</div>
+      <div className="left-links">{makeList(leftLinks, style)}</div>
+      <div className="right-links">{makeList(rightLinks, style)}</div>
       <style jsx>{style}</style>
     </div>
   );
@@ -45,6 +34,9 @@ const style = css`
     display: flex;
     justify-content: space-between;
     background-image: url(/images/projects/coast/coast.jpg);
+  }
+  ul li {
+    display: inline;
   }
   a {
     margin-left: 10px;
