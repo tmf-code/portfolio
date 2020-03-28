@@ -10,17 +10,6 @@ const Home = (): React.ReactElement => (
     <main>
       <HeaderBar></HeaderBar>
     </main>
-
-    <style jsx global>{`
-      body {
-        margin: 0;
-        border: 0;
-        padding: 0;
-      }
-      main {
-        width: 100%;
-      }
-    `}</style>
   </div>
 );
 

@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css';
-import { withHeader, HeaderBarProps } from '../../components/header-bar';
+import { HeaderBarProps } from '../../components/header-bar';
 
 export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps;
 
@@ -43,4 +43,4 @@ const style = css`
   }
 `;
 
-export default withHeader(ProjectIndex);
+export default ProjectIndex;
