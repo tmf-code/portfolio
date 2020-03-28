@@ -24,8 +24,10 @@ const Alacrity = (): React.ReactElement => {
           test. Alacrity is an elaboration on their findings, exploring the connections between the
           pace-keeping dimension of technology and time.
         </p>
-        Presentation of the work was made possible thanks to the{' '}
-        <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
+        <p>
+          Presentation of the work was made possible thanks to the{' '}
+          <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
+        </p>
       </div>
       <ProjectImages images={[{ src: '/images/projects/alacrity/alacrity1.png' }]}></ProjectImages>
     </div>
@@ -77,7 +79,7 @@ const style = css`
   }
 
   a::selection {
-    color: green;
+    color: hotpink;
   }
 `;
 

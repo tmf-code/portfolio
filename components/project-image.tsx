@@ -18,6 +18,9 @@ export const ProjectImages = ({
 const style = css`
   .container {
   }
+  img {
+    width: 100%;
+  }
 `;
 
 const createImages = (images: ProjectImageProps['images'], style?: string): React.ReactElement => (
