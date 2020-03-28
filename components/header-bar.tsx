@@ -60,3 +60,23 @@ const style = css`
     justify-content: flex-end;
   }
 `;
+
+export const withHeader = <T extends HeaderBarProps>(
+  WrappedComponent: React.ComponentType<T>,
+): React.FC<T & HeaderBarProps> => {
+  const displayName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+  const component = ({
+    leftLinks,
+    rightLinks,
+    ...props
+  }: T & HeaderBarProps): React.ReactElement => (
+    <>
+      <HeaderBar leftLinks={leftLinks} rightLinks={rightLinks}></HeaderBar>
+      <WrappedComponent {...(props as T)}></WrappedComponent>
+    </>
+  );
+
+  component.displayName = displayName;
+
+  return component;
+};

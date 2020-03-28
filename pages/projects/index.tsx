@@ -1,7 +1,7 @@
 import css from 'styled-jsx/css';
-import { HeaderBar } from '../../components/header-bar';
+import { withHeader, HeaderBarProps } from '../../components/header-bar';
 
-export type ProjectIndexProps = typeof defaultProjectIndexProps;
+export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps;
 
 const defaultProjectIndexProps = {
   projects: [
@@ -29,13 +29,10 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
     </ul>
   );
   return (
-    <main>
-      <HeaderBar></HeaderBar>
-      <div className="container">
-        {list}
-        <style jsx>{style}</style>
-      </div>
-    </main>
+    <div className="container">
+      {list}
+      <style jsx>{style}</style>
+    </div>
   );
 };
 
@@ -46,4 +43,4 @@ const style = css`
   }
 `;
 
-export default ProjectIndex;
+export default withHeader(ProjectIndex);
