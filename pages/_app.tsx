@@ -6,6 +6,9 @@ import 'modern-normalize';
 import '../styles/styles.css';
 import { HeaderBar } from '../components/header-bar';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 export default class MyApp extends App {
   public render() {
     const { Component, pageProps } = this.props;

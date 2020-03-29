@@ -1,5 +1,6 @@
 import css from 'styled-jsx/css';
 import { ProjectImages } from '../../components/project-image';
+import { SimpleSlider } from '../../components/simple-slider';
 
 const Alacrity = (): React.ReactElement => {
   return (
@@ -10,6 +11,17 @@ const Alacrity = (): React.ReactElement => {
       <div className="exhibited">
         Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.
       </div>
+
+      <SimpleSlider
+        images={[
+          { src: '/images/projects/alacrity/alacrity1.png' },
+          { src: '/images/projects/alacrity/alacrity2.png' },
+          { src: '/images/projects/alacrity/alacrity3.jpg' },
+          { src: '/images/projects/alacrity/alacrity4.jpg' },
+          { src: '/images/projects/alacrity/alacrity5.jpg' },
+        ]}
+      ></SimpleSlider>
+
       <div className="text">
         <p>
           Alacrity reflects on today’s fast-paced world - the click bait, use-all, catch phrase
@@ -29,7 +41,15 @@ const Alacrity = (): React.ReactElement => {
           <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
         </p>
       </div>
-      <ProjectImages images={[{ src: '/images/projects/alacrity/alacrity1.png' }]}></ProjectImages>
+      <ProjectImages
+        images={[
+          { src: '/images/projects/alacrity/alacrity1.png' },
+          { src: '/images/projects/alacrity/alacrity2.png' },
+          { src: '/images/projects/alacrity/alacrity3.jpg' },
+          { src: '/images/projects/alacrity/alacrity4.jpg' },
+          { src: '/images/projects/alacrity/alacrity5.jpg' },
+        ]}
+      ></ProjectImages>
     </div>
   );
 };

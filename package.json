@@ -9,9 +9,12 @@
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@types/react-slick": "^0.23.4",
     "next": "9.3.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^13.9.5",
