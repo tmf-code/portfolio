@@ -1,0 +1,37 @@
+.header-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .left-links {
+    display: flex;
+    justify-content: flex-start;
+    a {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .right-links {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  li {
+    display: inline;
+  }
+
+  .current-page {
+    color: black;
+  }
+}

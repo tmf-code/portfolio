@@ -1,3 +1,5 @@
+import styles from '../styles/header-bar.module.scss';
+
 export type HeaderBarProps = typeof defaultHeaderBarProps;
 
 const defaultHeaderBarProps = {
@@ -15,7 +17,7 @@ export const HeaderBar = ({
   pathname,
 }: HeaderBarProps): React.ReactElement => {
   return (
-    <div className="header-bar">
+    <div className={styles['header-bar']}>
       <div className="left-links">{makeList(leftLinks, pathname)}</div>
       <div className="right-links">{makeList(rightLinks, pathname)}</div>
     </div>
@@ -28,10 +30,9 @@ const makeList = (
 ): React.ReactElement => (
   <ul>
     {links.map((link, index) => {
-      console.log(pathname);
       const currentPage = pathname.split('/')[1] === link.href.replace('/', '');
       return (
-        <li key={index} className="header-bar-li">
+        <li key={index}>
           <h2 className={currentPage ? 'current-page' : ''}>
             <a className={currentPage ? 'current-page' : ''} href={link.href}>
               {link.text}
