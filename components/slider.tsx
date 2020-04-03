@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Slick, { Settings } from 'react-slick';
+import styles from '../styles/slider.module.scss';
 
 export type ProjectImageProps = {
   images: string[];
@@ -23,7 +24,10 @@ export class Slider extends Component<ProjectImageProps> {
         <Slick {...settings}>
           {this.props.images.map((image, index) => (
             <div key={index}>
-              <div className="slider-image" style={{ backgroundImage: `url(${image})` }} />
+              <div
+                className={styles['slider-image']}
+                style={{ backgroundImage: `url(${image})` }}
+              />
             </div>
           ))}
         </Slick>
