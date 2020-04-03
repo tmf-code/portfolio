@@ -1,4 +1,5 @@
 import { Slider } from '../../components/slider';
+import { Video } from '../../components/video';
 
 const Alacrity = (): React.ReactElement => {
   return (
@@ -38,6 +39,7 @@ const Alacrity = (): React.ReactElement => {
           <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
         </p>
       </div>
+      <Video srcURL={'https://www.youtube.com/embed/Qy72OkFC7cg'} title={'Alacrity'}></Video>
     </div>
   );
 };
