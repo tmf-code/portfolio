@@ -12,6 +12,7 @@ export class Slider extends Component<ProjectImageProps> {
       dots: true,
       arrows: false,
       accessibility: true,
+      lazyLoad: 'progressive',
       infinite: true,
       speed: 900,
       slidesToShow: 1,
