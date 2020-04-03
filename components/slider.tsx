@@ -21,7 +21,7 @@ export class Slider extends Component<ProjectImageProps> {
       autoplaySpeed: 6000,
     };
     return (
-      <div className="slider">
+      <div className={styles['slider']}>
         <Slick {...settings}>
           {this.props.images.map((image, index) => (
             <div key={index}>
