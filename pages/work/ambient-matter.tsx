@@ -7,37 +7,41 @@ const AmbientMatter = (): React.ReactElement => {
       <style jsx>{style}</style>
       <h2>ambient matter</h2>
       <div className="date">2019</div>
-      <div className="exhibited">
-        Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.
+      <div className="exhibited">Work in Progress </div>
+      <div className="text">
+        As technologies like machine vision begin doing some of our perception for us, we find it
+        relevant to investigate things they (and by extension us) deem unimportant. Things that are
+        not rewarded during training. Task-oriented at their core, ambience is uninteresting to a
+        learned machine. In our work, we turn to this ambient matter.
       </div>
-
       <SimpleSlider
         images={[
-          '/images/projects/alacrity/alacrity1.png',
-          '/images/projects/alacrity/alacrity2.png',
-          '/images/projects/alacrity/alacrity3.jpg',
-          '/images/projects/alacrity/alacrity4.jpg',
-          '/images/projects/alacrity/alacrity5.jpg',
+          '/images/projects/ambient-matter/ambience1.jpg',
+          '/images/projects/ambient-matter/ambience2.jpg',
+          '/images/projects/ambient-matter/ambience3.jpg',
+          '/images/projects/ambient-matter/ambience4.jpg',
         ]}
       ></SimpleSlider>
 
       <div className="text">
+        <h4>Background</h4>
         <p>
-          Alacrity reflects on today’s fast-paced world - the click bait, use-all, catch phrase
-          littering self-help blogs and trendy articles. Reportedly things keep moving faster and in
-          a straight line. In this world, we strive to “get on top of things”, and get ahead, or at
-          least, keep up before we fall behind. Addressing these contemporary conceptions of time,
-          the piece probes the interwoven notions of obligation and futility.
+          Our experiences are filled with ambience, through space and time; the not-subject of our
+          perception. Padding, noise, a backdrop, the in-between and around. The (im)material that
+          we pay no attention to. Yet without it, our experiences and perspectives of the world
+          would be very different. We understand ambience as the ‘not-subject’. It has no edges, a
+          non-bounded spatio-temporal meshwork. A temporal texture that invokes infinity, slipping
+          by unquestioned. This understanding may be tricky as any time we turn our attention to it,
+          it turns subject. Just like the Kantian subject requires synthesis by a priori concepts,
+          it is put in a container. And with this it transforms, as others fill the ambience.
         </p>
+        <h4>‘Get to the point, cut the crap’</h4>
         <p>
-          The work builds on previous research conducted by the artists, in which they structured a
-          performative reading on the motif of the ‘beep test’; the school fitness and endurance
-          test. Alacrity is an elaboration on their findings, exploring the connections between the
-          pace-keeping dimension of technology and time.
-        </p>
-        <p>
-          Presentation of the work was made possible thanks to the{' '}
-          <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
+          If efficiency, progress and production guide the modern-day status quo, ambience is a
+          vacancy waiting to be used. In these terms, it’s no more than waste. A waste of space, a
+          waste of time. Through machines we push this excess out of mind. By their nature machinic
+          tasks require a subject. But how about the excess? What use is ambience to machines? How
+          could ambience be intensified, and still remain on the mind’s peripherals?
         </p>
       </div>
     </div>

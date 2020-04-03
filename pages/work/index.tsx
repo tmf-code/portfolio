@@ -6,15 +6,15 @@ export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps
 const defaultProjectIndexProps = {
   projects: [
     { href: 'work/alacrity', text: 'alacrity' },
-    { href: 'work/ambient-matter', text: 'ambient Matter' },
-    { href: 'work/beeptext', text: 'beeptext' },
+    { href: 'work/ambient-matter', text: 'ambient matter' },
+    { href: 'work/beep-text', text: 'beep text' },
     { href: 'work/coast', text: 'the coast was clear' },
     { href: 'work/dolls', text: 'dolls' },
     { href: 'work/feedself', text: 'feedself' },
     { href: 'work/gan', text: 'generative adversarial networks' },
-    { href: 'work/interpassivity', text: 'interpassivity' },
+    { href: 'work/interpassivity', text: 'beyond interpassivity' },
     { href: 'work/ordinary-rambling', text: 'ordinary rambling' },
-    { href: 'work/textures', text: 'textures' },
+    { href: 'work/textures', text: 'temporal textures' },
   ],
 };
 

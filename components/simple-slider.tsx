@@ -37,6 +37,7 @@ export class SimpleSlider extends Component<ProjectImageProps> {
 
 const style = css`
   .container {
+    margin-top: 15px;
     margin-bottom: 5%;
     width: 100%;
   }
