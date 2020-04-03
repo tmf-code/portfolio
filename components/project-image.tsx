@@ -1,5 +1,3 @@
-import css from 'styled-jsx/css';
-
 export type ProjectImageProps = {
   images: { src: string; alt?: string }[];
 };
@@ -7,27 +5,12 @@ export type ProjectImageProps = {
 export const ProjectImages = ({
   images,
 }: ProjectImageProps): React.ReactElement<ProjectImageProps> => {
-  return (
-    <div className="container">
-      {createImages(images, style)}
-      <style jsx>{style}</style>
-    </div>
-  );
+  return <div className="container">{createImages(images)}</div>;
 };
-
-const style = css`
-  .container {
-  }
-  img {
-    width: 100%;
-  }
-`;
-
-const createImages = (images: ProjectImageProps['images'], style?: string): React.ReactElement => (
+const createImages = (images: ProjectImageProps['images']): React.ReactElement => (
   <>
     {images.map((image, index) => (
       <img key={index} src={image.src} alt={image.alt} />
     ))}
-    <style jsx>{style}</style>
   </>
 );

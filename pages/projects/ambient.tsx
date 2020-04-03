@@ -1,17 +1,15 @@
-import { SimpleSlider } from '../../components/slider';
-import { style } from '../../components/project-page-style';
+import { Slider } from '../../components/slider';
 
 const Alacrity = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>alacrity</h2>
       <div className="date">2019</div>
       <div className="exhibited">
         Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.
       </div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/alacrity/alacrity1.png',
           '/images/projects/alacrity/alacrity2.png',
@@ -19,7 +17,7 @@ const Alacrity = (): React.ReactElement => {
           '/images/projects/alacrity/alacrity4.jpg',
           '/images/projects/alacrity/alacrity5.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>

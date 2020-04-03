@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import Slick, { Settings } from 'react-slick';
-import css from 'styled-jsx/css';
 
 export type ProjectImageProps = {
   images: string[];
@@ -20,8 +19,7 @@ export class Slider extends Component<ProjectImageProps> {
       autoplaySpeed: 6000,
     };
     return (
-      <div className="container">
-        <style jsx>{style}</style>
+      <div className="slider">
         <Slick {...settings}>
           {this.props.images.map((image, index) => (
             <div key={index}>
@@ -33,19 +31,3 @@ export class Slider extends Component<ProjectImageProps> {
     );
   }
 }
-
-const style = css`
-  .container {
-    margin-top: 15px;
-    margin-bottom: 5%;
-    width: 100%;
-  }
-  .slider-image {
-    background: black;
-    width: 100%;
-    height: 56.25vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-`;
