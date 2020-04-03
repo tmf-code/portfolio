@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const Beeptext = (): React.ReactElement => {
   return (
@@ -25,12 +25,12 @@ const Beeptext = (): React.ReactElement => {
         </blockquote>
       </div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/beep-text/beeptext1.jpg',
           '/images/projects/beep-text/beeptext2.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>

@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const OrdinaryRambling = (): React.ReactElement => {
   return (
@@ -13,13 +13,13 @@ const OrdinaryRambling = (): React.ReactElement => {
         Journeys into Diversity, June 2019, Victor J. Koningsbergergebouw, Utrecht University.
       </div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/ordinary-rambling/ordinary-rambling1.jpg',
           '/images/projects/ordinary-rambling/ordinary-rambling2.jpg',
           '/images/projects/ordinary-rambling/ordinary-rambling3.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>

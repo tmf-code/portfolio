@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const Textures = (): React.ReactElement => {
   return (
@@ -7,7 +7,7 @@ const Textures = (): React.ReactElement => {
       <div className="date">2019</div>
       <div className="exhibited">The Four Ecologies coursework, ArtScience, KABK.</div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/textures/textures9.png',
           '/images/projects/textures/textures0.jpg',
@@ -20,7 +20,7 @@ const Textures = (): React.ReactElement => {
           '/images/projects/textures/textures7.jpg',
           '/images/projects/textures/textures8.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>

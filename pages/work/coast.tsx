@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const Coast = (): React.ReactElement => {
   return (
@@ -19,7 +19,7 @@ const Coast = (): React.ReactElement => {
         </p>
       </div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/coast/coast1.jpg',
           '/images/projects/coast/coast2.jpg',
@@ -28,7 +28,7 @@ const Coast = (): React.ReactElement => {
           '/images/projects/coast/coast5.jpg',
           '/images/projects/coast/coast6.png',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <blockquote cite="">

@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const Dolls = (): React.ReactElement => {
   return (
@@ -7,13 +7,13 @@ const Dolls = (): React.ReactElement => {
       <div className="date">2019</div>
       <div className="exhibited">Work in progress</div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/dolls/dolls1.png',
           '/images/projects/dolls/dolls2.png',
           '/images/projects/dolls/dolls3.png',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>Play.</p>

@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const Feedself = (): React.ReactElement => {
   return (
@@ -8,14 +8,14 @@ const Feedself = (): React.ReactElement => {
       <div className="exhibited">Hacking Nature, 29-30 June 2018, De Samenscholing, The Hague.</div>
       <div className="exhibited">Common Inn, 18 April 2019, Het Nieuwe Instituut, Rotterdam.</div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/feedself/feedself1.png',
           '/images/projects/feedself/feedself2.jpg',
           '/images/projects/feedself/feedself3.jpg',
           '/images/projects/feedself/feedself4.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>

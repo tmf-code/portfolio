@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const GAN = (): React.ReactElement => {
   return (
@@ -7,13 +7,13 @@ const GAN = (): React.ReactElement => {
       <div className="date">2019</div>
       <div className="exhibited">Neural Networks coursework, LIACS, Leiden University.</div>
 
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/gan/gan1.png',
           '/images/projects/gan/gan2.jpg',
           '/images/projects/gan/gan3.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <p>

@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const AmbientMatter = (): React.ReactElement => {
   return (
@@ -12,14 +12,14 @@ const AmbientMatter = (): React.ReactElement => {
         not rewarded during training. Task-oriented at their core, ambience is uninteresting to a
         learned machine. In our work, we turn to this ambient matter.
       </div>
-      <SimpleSlider
+      <Slider
         images={[
           '/images/projects/ambient-matter/ambience1.jpg',
           '/images/projects/ambient-matter/ambience2.jpg',
           '/images/projects/ambient-matter/ambience3.jpg',
           '/images/projects/ambient-matter/ambience4.jpg',
         ]}
-      ></SimpleSlider>
+      ></Slider>
 
       <div className="text">
         <h4>Background</h4>

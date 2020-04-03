@@ -1,4 +1,4 @@
-import { SimpleSlider } from '../../components/simple-slider';
+import { Slider } from '../../components/slider';
 
 const Interpassivity = (): React.ReactElement => {
   return (
@@ -9,9 +9,7 @@ const Interpassivity = (): React.ReactElement => {
 
       <div className="text">
         <h3>Beyond Interpassivity: a parcours to liberation from the burden of enjoyment</h3>
-        <SimpleSlider
-          images={['/images/projects/interpassivity/interpassivity1.jpg']}
-        ></SimpleSlider>
+        <Slider images={['/images/projects/interpassivity/interpassivity1.jpg']}></Slider>
         <h4>01. The unattainable desire for nothingness</h4>
         <p>
           If a void, or place, is made, as it would in your house, it will soon be filled. An
