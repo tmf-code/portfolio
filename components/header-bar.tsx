@@ -6,6 +6,7 @@ const defaultHeaderBarProps = {
   leftLinks: [
     { href: '/', text: 'home' },
     { href: '/work', text: 'work' },
+    { href: '/play', text: 'play' },
   ],
   rightLinks: [{ href: '/about', text: 'about' }],
   pathname: '',

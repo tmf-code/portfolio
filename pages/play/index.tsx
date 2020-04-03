@@ -3,17 +3,7 @@ import { HeaderBarProps } from '../../components/header-bar';
 export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps;
 
 const defaultProjectIndexProps = {
-  projects: [
-    { href: 'work/alacrity', text: 'alacrity' },
-    { href: 'work/ambient-matter', text: 'ambient matter' },
-    { href: 'work/beep-text', text: 'beep text' },
-    { href: 'work/coast', text: 'the coast was clear' },
-    { href: 'work/feedself', text: 'feedself' },
-    { href: 'work/gan', text: 'generative adversarial networks' },
-    { href: 'work/interpassivity', text: 'beyond interpassivity' },
-    { href: 'work/ordinary-rambling', text: 'ordinary rambling' },
-    { href: 'work/textures', text: 'temporal textures' },
-  ],
+  projects: [{ href: 'play/dolls', text: 'dolls' }],
 };
 
 const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
@@ -28,7 +18,7 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
   );
   return (
     <div className="container">
-      <h2>work</h2>
+      <h2>play</h2>
       {list}
     </div>
   );
