@@ -1,33 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Component } from 'react';
-import Slider, { Settings, CustomArrowProps } from 'react-slick';
+import Slider, { Settings } from 'react-slick';
 import css from 'styled-jsx/css';
-
-function SampleNextArrow(props: CustomArrowProps) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'turquoise' }}
-      role="button"
-      tabIndex={-1}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props: CustomArrowProps) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', background: 'turquoise' }}
-      role="button"
-      tabIndex={-1}
-      onClick={onClick}
-    />
-  );
-}
 
 export type ProjectImageProps = {
   images: { src: string; alt?: string }[];
@@ -37,21 +11,23 @@ export class SimpleSlider extends Component<ProjectImageProps> {
   render() {
     const settings: Settings = {
       dots: true,
-      arrows: true,
+      arrows: false,
       accessibility: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />,
+      autoplay: true,
+      autoplaySpeed: 4000,
     };
     return (
       <div className="container">
         <style jsx>{style}</style>
         <Slider {...settings}>
           {this.props.images.map((image, index) => (
-            <img key={index} src={image.src} alt={image.alt} height="500px" />
+            <div key={index}>
+              <div className="slider-image" style={{ backgroundImage: `url(${image.src})` }} />
+            </div>
           ))}
         </Slider>
       </div>
@@ -63,5 +39,13 @@ const style = css`
   .container {
     margin-bottom: 5%;
     width: 100%;
+  }
+  .slider-image {
+    background: black;
+    width: 100%;
+    height: 45vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 `;
