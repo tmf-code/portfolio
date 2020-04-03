@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
   .left-links {
     display: flex;
@@ -38,25 +38,27 @@
   a.current-page {
     position: relative;
   }
+
   a.current-page::after {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
-    top: calc(100%);
+    top: calc(100% + 5px);
     left: calc(50% - 10px);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #000;
     clear: both;
   }
+
   a.current-page::before {
     content: '';
     position: absolute;
     width: 100vw;
     background: transparent;
     height: 1px;
-    top: calc(100% + 10px);
+    top: calc(100% + 15px);
     left: calc(50% + 1px - 100vw + 75%);
     // border-right: 2px solid #000;
     border-top: 2px solid #000;
