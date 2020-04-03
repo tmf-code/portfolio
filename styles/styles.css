@@ -40,14 +40,19 @@ h2 {
   font-style: bold;
 }
 
-.date,
-.exhibited {
+.date {
   font-size: 22px;
   margin-bottom: 1em;
 }
 
 .exhibited {
-  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+}
+
+.footnote {
+  font-size: 18px;
+  margin-bottom: 1em;
 }
 
 a {
