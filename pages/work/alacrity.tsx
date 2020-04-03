@@ -40,6 +40,7 @@ const Alacrity = (): React.ReactElement => {
         </p>
       </div>
       <Video srcURL={'https://www.youtube.com/embed/Qy72OkFC7cg'} title={'Alacrity'}></Video>
+      <Video srcURL={'https://www.youtube.com/embed/BsGREhdPSvY'} title={'Alacrity'}></Video>
     </div>
   );
 };

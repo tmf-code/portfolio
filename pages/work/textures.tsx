@@ -1,4 +1,5 @@
 import { Slider } from '../../components/slider';
+import { Video } from '../../components/video';
 
 const Textures = (): React.ReactElement => {
   return (
@@ -56,6 +57,8 @@ const Textures = (): React.ReactElement => {
           potential for texture as an overarching commonality.
         </p>
       </div>
+
+      <Video srcURL={'https://www.youtube.com/embed/D7jje7Lrfoc'} title={'Feedself'}></Video>
     </div>
   );
 };

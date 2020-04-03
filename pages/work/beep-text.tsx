@@ -1,4 +1,5 @@
 import { Slider } from '../../components/slider';
+import { Video } from '../../components/video';
 
 const Beeptext = (): React.ReactElement => {
   return (
@@ -44,6 +45,8 @@ const Beeptext = (): React.ReactElement => {
           between beeps get progressively shorter.
         </p>
       </div>
+
+      <Video srcURL={'https://www.youtube.com/embed/HLvt6xcZQ60'} title={'Beep Text'}></Video>
     </div>
   );
 };

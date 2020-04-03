@@ -1,4 +1,5 @@
 import { Slider } from '../../components/slider';
+import { Video } from '../../components/video';
 
 const Coast = (): React.ReactElement => {
   return (
@@ -119,6 +120,8 @@ const Coast = (): React.ReactElement => {
           foam, we don’t fight the wind.
         </p>
       </div>
+
+      <Video srcURL={'https://www.youtube.com/embed/LBrnuKq1AyA'} title={'Foams'}></Video>
     </div>
   );
 };

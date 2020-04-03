@@ -1,4 +1,5 @@
 import { Slider } from '../../components/slider';
+import { Video } from '../../components/video';
 
 const Feedself = (): React.ReactElement => {
   return (
@@ -28,6 +29,8 @@ const Feedself = (): React.ReactElement => {
         </p>
       </div>
       <div className="footnote">Photographs by Franziska Müller Schmidt.</div>
+
+      <Video srcURL={'https://www.youtube.com/embed/_4VCEmfpmrI'} title={'Feedself'}></Video>
     </div>
   );
 };
