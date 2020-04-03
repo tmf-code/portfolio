@@ -11,7 +11,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default class MyApp extends App {
   public render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, router } = this.props;
 
     return (
       <>
@@ -19,7 +19,7 @@ export default class MyApp extends App {
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Next.js TypeScript Quickstart</title>
         </Head>
-        <HeaderBar></HeaderBar>
+        <HeaderBar pathname={router.pathname}></HeaderBar>
         <Component {...pageProps} />
       </>
     );
