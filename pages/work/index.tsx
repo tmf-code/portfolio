@@ -28,7 +28,7 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
   );
   return (
     <div className="container">
-      <h2>work</h2>
+      <h2>2019</h2>
       {list}
     </div>
   );
