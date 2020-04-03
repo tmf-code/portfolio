@@ -1,5 +1,4 @@
 import css from 'styled-jsx/css';
-import { ProjectImages } from '../../components/project-image';
 import { SimpleSlider } from '../../components/simple-slider';
 
 const Alacrity = (): React.ReactElement => {
@@ -41,15 +40,6 @@ const Alacrity = (): React.ReactElement => {
           <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
         </p>
       </div>
-      <ProjectImages
-        images={[
-          { src: '/images/projects/alacrity/alacrity1.png' },
-          { src: '/images/projects/alacrity/alacrity2.png' },
-          { src: '/images/projects/alacrity/alacrity3.jpg' },
-          { src: '/images/projects/alacrity/alacrity4.jpg' },
-          { src: '/images/projects/alacrity/alacrity5.jpg' },
-        ]}
-      ></ProjectImages>
     </div>
   );
 };
