@@ -1,10 +1,8 @@
 import { SimpleSlider } from '../../components/simple-slider';
-import { style } from '../../styles/project-page-style';
 
 const GAN = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>cephalopod crania</h2>
       <div className="date">2019</div>
       <div className="exhibited">Neural Networks coursework, LIACS, Leiden University.</div>

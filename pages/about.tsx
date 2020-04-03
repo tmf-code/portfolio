@@ -1,8 +1,6 @@
-import { style } from '../styles/project-page-style';
 const About = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>about</h2>
 
       <div className="text">

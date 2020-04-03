@@ -1,10 +1,8 @@
 import { SimpleSlider } from '../../components/simple-slider';
-import { style } from '../../styles/project-page-style';
 
 const Beeptext = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>beep text</h2>
       <div className="date">2019</div>
       <div className="exhibited">Alternate Perspectives coursework, ArtScience, KABK.</div>

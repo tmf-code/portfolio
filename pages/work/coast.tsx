@@ -1,10 +1,8 @@
 import { SimpleSlider } from '../../components/simple-slider';
-import { style } from '../../styles/project-page-style';
 
 const Coast = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>the coast was clear</h2>
       <div className="date">2019</div>
       <div className="exhibited">As We Know It, 29-30 June 2019, Vondelbunker, Amsterdam.</div>

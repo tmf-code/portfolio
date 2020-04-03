@@ -1,10 +1,8 @@
 import { SimpleSlider } from '../../components/simple-slider';
-import { style } from '../../styles/project-page-style';
 
 const Feedself = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>feedself</h2>
       <div className="date">2018</div>
       <div className="exhibited">Hacking Nature, 29-30 June 2018, De Samenscholing, The Hague.</div>

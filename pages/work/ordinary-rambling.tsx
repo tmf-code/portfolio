@@ -1,10 +1,8 @@
 import { SimpleSlider } from '../../components/simple-slider';
-import { style } from '../../styles/project-page-style';
 
 const OrdinaryRambling = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>ordinary rambling</h2>
       <div className="date">2018</div>
       <div className="exhibited">BYOB, 29 September 2018, Nicolaikerk, Utrecht.</div>

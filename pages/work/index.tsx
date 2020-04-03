@@ -1,5 +1,4 @@
 import { HeaderBarProps } from '../../components/header-bar';
-import { style } from '../../styles/project-page-style';
 
 export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps;
 
@@ -21,7 +20,6 @@ const defaultProjectIndexProps = {
 const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
   const list = (
     <ul>
-      <style jsx>{style}</style>
       {projects.map((project, index) => (
         <li key={index}>
           <a href={project.href}>{project.text}</a>
@@ -33,7 +31,6 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
     <div className="container">
       <h2>Work</h2>
       {list}
-      <style jsx>{style}</style>
     </div>
   );
 };

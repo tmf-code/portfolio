@@ -1,10 +1,8 @@
 import { SimpleSlider } from '../../components/simple-slider';
-import { style } from '../../styles/project-page-style';
 
 const Interpassivity = (): React.ReactElement => {
   return (
     <div className="container">
-      <style jsx>{style}</style>
       <h2>beyond interpassivity</h2>
       <div className="date">2018</div>
       <div className="exhibited">Time as Matter coursework, ArtScience, KABK.</div>
