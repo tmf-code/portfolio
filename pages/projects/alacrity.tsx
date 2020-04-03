@@ -13,11 +13,11 @@ const Alacrity = (): React.ReactElement => {
 
       <SimpleSlider
         images={[
-          { src: '/images/projects/alacrity/alacrity1.png' },
-          { src: '/images/projects/alacrity/alacrity2.png' },
-          { src: '/images/projects/alacrity/alacrity3.jpg' },
-          { src: '/images/projects/alacrity/alacrity4.jpg' },
-          { src: '/images/projects/alacrity/alacrity5.jpg' },
+          '/images/projects/alacrity/alacrity1.png',
+          '/images/projects/alacrity/alacrity2.png',
+          '/images/projects/alacrity/alacrity3.jpg',
+          '/images/projects/alacrity/alacrity4.jpg',
+          '/images/projects/alacrity/alacrity5.jpg',
         ]}
       ></SimpleSlider>
 
