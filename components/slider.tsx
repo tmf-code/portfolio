@@ -43,7 +43,7 @@ const style = css`
   .slider-image {
     background: black;
     width: 100%;
-    height: 45vw;
+    height: 56.25vw;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
