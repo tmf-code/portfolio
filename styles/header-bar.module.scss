@@ -32,7 +32,12 @@
   }
 
   .current-page {
+    transition: color 0.15s ease-in;
     color: black;
+  }
+
+  .current-page:hover {
+    color: pink;
   }
 
   a.current-page {
@@ -59,7 +64,7 @@
     background: transparent;
     height: 1px;
     top: calc(100% + 15px);
-    left: calc(50% + 1px - 100vw + 75%);
+    left: calc(50% + 1px - 100vw + 55%);
     // border-right: 2px solid #000;
     border-top: 2px solid #000;
     clear: both;
