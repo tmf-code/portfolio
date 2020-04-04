@@ -8,6 +8,7 @@ import { HeaderBar } from '../components/header-bar';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FooterBar } from '../components/footer-bar';
 
 export default class MyApp extends App {
   public render() {
@@ -21,6 +22,7 @@ export default class MyApp extends App {
         </Head>
         <HeaderBar pathname={router.pathname}></HeaderBar>
         <Component {...pageProps} />
+        <FooterBar></FooterBar>
       </>
     );
   }
