@@ -28,8 +28,8 @@ const Beeptext = (): React.ReactElement => {
 
       <Slider
         images={[
-          '/images/projects/beep-text/beeptext1.jpg',
-          '/images/projects/beep-text/beeptext2.jpg',
+          require('images/projects/beep-text/beeptext1.jpg'),
+          require('images/projects/beep-text/beeptext2.jpg'),
         ]}
       ></Slider>
 

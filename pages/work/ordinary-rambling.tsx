@@ -16,9 +16,9 @@ const OrdinaryRambling = (): React.ReactElement => {
 
       <Slider
         images={[
-          '/images/projects/ordinary-rambling/ordinary-rambling1.jpg',
-          '/images/projects/ordinary-rambling/ordinary-rambling2.jpg',
-          '/images/projects/ordinary-rambling/ordinary-rambling3.jpg',
+          require('images/projects/ordinary-rambling/ordinary-rambling1.jpg'),
+          require('images/projects/ordinary-rambling/ordinary-rambling2.jpg'),
+          require('images/projects/ordinary-rambling/ordinary-rambling3.jpg'),
         ]}
       ></Slider>
 

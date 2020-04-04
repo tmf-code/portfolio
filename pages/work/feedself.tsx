@@ -11,10 +11,10 @@ const Feedself = (): React.ReactElement => {
 
       <Slider
         images={[
-          '/images/projects/feedself/feedself1.png',
-          '/images/projects/feedself/feedself2.jpg',
-          '/images/projects/feedself/feedself3.jpg',
-          '/images/projects/feedself/feedself4.jpg',
+          require('images/projects/feedself/feedself1.png'),
+          require('images/projects/feedself/feedself2.jpg'),
+          require('images/projects/feedself/feedself3.jpg'),
+          require('images/projects/feedself/feedself4.jpg'),
         ]}
       ></Slider>
 

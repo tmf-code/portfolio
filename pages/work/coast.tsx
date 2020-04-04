@@ -22,12 +22,12 @@ const Coast = (): React.ReactElement => {
 
       <Slider
         images={[
-          '/images/projects/coast/coast1.jpg',
-          '/images/projects/coast/coast2.jpg',
-          '/images/projects/coast/coast3.jpg',
-          '/images/projects/coast/coast4.jpg',
-          '/images/projects/coast/coast5.jpg',
-          '/images/projects/coast/coast6.png',
+          require('images/projects/coast/coast1.jpg'),
+          require('images/projects/coast/coast2.jpg'),
+          require('images/projects/coast/coast3.jpg'),
+          require('images/projects/coast/coast4.jpg'),
+          require('images/projects/coast/coast5.jpg'),
+          require('images/projects/coast/coast6.png'),
         ]}
       ></Slider>
 

@@ -14,10 +14,10 @@ const AmbientMatter = (): React.ReactElement => {
       </div>
       <Slider
         images={[
-          '/images/projects/ambient-matter/ambience1.jpg',
-          '/images/projects/ambient-matter/ambience2.jpg',
-          '/images/projects/ambient-matter/ambience3.jpg',
-          '/images/projects/ambient-matter/ambience4.jpg',
+          require('images/projects/ambient-matter/ambience1.jpg'),
+          require('images/projects/ambient-matter/ambience2.jpg'),
+          require('images/projects/ambient-matter/ambience3.jpg'),
+          require('images/projects/ambient-matter/ambience4.jpg'),
         ]}
       ></Slider>
 
