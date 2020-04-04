@@ -5,10 +5,15 @@ export type VideoProps = {
 
 export const Video = ({ srcURL, title }: VideoProps): React.ReactElement<VideoProps> => {
   return (
-    <div className="video">
+    <div style={{ position: 'relative', paddingTop: '56.25%' }} className="video">
       <iframe
-        width={'100%'}
-        height={'600vw'}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
         src={srcURL}
         title={title}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
