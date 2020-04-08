@@ -1,5 +1,5 @@
 import 'modern-normalize';
-import { DefaultSeo } from 'next-seo';
+import { DefaultSeo, NextSeoProps } from 'next-seo';
 import App from 'next/app';
 import Head from 'next/head';
 import * as React from 'react';
@@ -14,12 +14,20 @@ export default class MyApp extends App {
   public render() {
     const { Component, pageProps, router } = this.props;
 
+    const currentPage = router.pathname.split('/').pop();
+    const pageName = currentPage === '' ? 'home' : currentPage;
+
+    const pageSEO: NextSeoProps = {
+      ...SEO,
+      title: pageName,
+    };
+
     return (
       <>
-        <DefaultSeo {...SEO} />
+        <DefaultSeo {...pageSEO} />
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>TMF Portfolio - {router.pathname.split('/').pop()}</title>
+          <title>{pageSEO.title} | TMF Portfolio</title>
         </Head>
         <div className="page-content">
           <HeaderBar pathname={router.pathname}></HeaderBar>
