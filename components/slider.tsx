@@ -3,7 +3,12 @@ import Slick, { Settings } from 'react-slick';
 import styles from '../styles/slider.module.scss';
 
 export type ProjectImageProps = {
-  images: string[];
+  images: ProjectImageData[];
+};
+
+type ProjectImageData = {
+  src: string;
+  caption?: string;
 };
 
 export class Slider extends Component<ProjectImageProps> {
@@ -23,12 +28,10 @@ export class Slider extends Component<ProjectImageProps> {
     return (
       <div className={styles['slider']}>
         <Slick {...settings}>
-          {this.props.images.map((image, index) => (
+          {this.props.images.map(({ src, caption }, index) => (
             <div key={index}>
-              <div
-                className={styles['slider-image']}
-                style={{ backgroundImage: `url(${image})` }}
-              />
+              <div className={styles['slider-image']} style={{ backgroundImage: `url(${src})` }} />
+              {caption && <div className={styles['slider-caption']}>{caption}</div>}
             </div>
           ))}
         </Slick>

@@ -9,9 +9,9 @@ const GAN = (): React.ReactElement => {
 
       <Slider
         images={[
-          require('images/projects/gan/gan1.png'),
-          require('images/projects/gan/gan2.jpg'),
-          require('images/projects/gan/gan3.jpg'),
+          { src: require('images/projects/gan/gan1.png') },
+          { src: require('images/projects/gan/gan2.jpg') },
+          { src: require('images/projects/gan/gan3.jpg') },
         ]}
       ></Slider>
 

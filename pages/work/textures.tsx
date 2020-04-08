@@ -10,16 +10,16 @@ const Textures = (): React.ReactElement => {
 
       <Slider
         images={[
-          require('images/projects/textures/textures9.png'),
-          require('images/projects/textures/textures0.jpg'),
-          require('images/projects/textures/textures1.jpg'),
-          require('images/projects/textures/textures2.jpg'),
-          require('images/projects/textures/textures3.jpg'),
-          require('images/projects/textures/textures4.jpg'),
-          require('images/projects/textures/textures5.jpg'),
-          require('images/projects/textures/textures6.jpg'),
-          require('images/projects/textures/textures7.jpg'),
-          require('images/projects/textures/textures8.jpg'),
+          { src: require('images/projects/textures/textures9.png') },
+          { src: require('images/projects/textures/textures0.jpg') },
+          { src: require('images/projects/textures/textures1.jpg') },
+          { src: require('images/projects/textures/textures2.jpg') },
+          { src: require('images/projects/textures/textures3.jpg') },
+          { src: require('images/projects/textures/textures4.jpg') },
+          { src: require('images/projects/textures/textures5.jpg') },
+          { src: require('images/projects/textures/textures6.jpg') },
+          { src: require('images/projects/textures/textures7.jpg') },
+          { src: require('images/projects/textures/textures8.jpg') },
         ]}
       ></Slider>
 

@@ -12,11 +12,11 @@ const Alacrity = (): React.ReactElement => {
 
       <Slider
         images={[
-          require('images/projects/alacrity/alacrity1.png'),
-          require('images/projects/alacrity/alacrity2.png'),
-          require('images/projects/alacrity/alacrity3.jpg'),
-          require('images/projects/alacrity/alacrity4.jpg'),
-          require('images/projects/alacrity/alacrity5.jpg'),
+          { src: require('images/projects/alacrity/alacrity1.png') },
+          { src: require('images/projects/alacrity/alacrity2.png') },
+          { src: require('images/projects/alacrity/alacrity3.jpg') },
+          { src: require('images/projects/alacrity/alacrity4.jpg') },
+          { src: require('images/projects/alacrity/alacrity5.jpg') },
         ]}
       ></Slider>
 

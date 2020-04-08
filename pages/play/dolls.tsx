@@ -9,9 +9,9 @@ const Dolls = (): React.ReactElement => {
 
       <Slider
         images={[
-          require('images/projects/dolls/dolls1.png'),
-          require('images/projects/dolls/dolls2.png'),
-          require('images/projects/dolls/dolls3.png'),
+          { src: require('images/projects/dolls/dolls1.png') },
+          { src: require('images/projects/dolls/dolls2.png') },
+          { src: require('images/projects/dolls/dolls3.png') },
         ]}
       ></Slider>
 

@@ -9,7 +9,9 @@ const Interpassivity = (): React.ReactElement => {
 
       <div className="text">
         <h3>Beyond Interpassivity: a parcours to liberation from the burden of enjoyment</h3>
-        <Slider images={[require('images/projects/interpassivity/interpassivity1.jpg')]}></Slider>
+        <Slider
+          images={[{ src: require('images/projects/interpassivity/interpassivity1.jpg') }]}
+        ></Slider>
         <h4>01. The unattainable desire for nothingness</h4>
         <p>
           If a void, or place, is made, as it would in your house, it will soon be filled. An
