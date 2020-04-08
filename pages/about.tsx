@@ -6,7 +6,8 @@ const About = (): React.ReactElement => {
       <div className="text">
         <p>
           TMF is an Amsterdam/Berlin based art-research duo made up of{' '}
-          <a href="/">Alexandra Barancová</a> and <a href="/">Jae Perris</a>. Their work explores
+          <a href="/">Alexandra Barancová</a> and{' '}
+          <a href="https://honga1.github.io/personal-portfolio/">Jae Perris</a>. Their work explores
           meanings of value in today’s technoscapes with a particular interest in nonhuman
           interlocutors. Their main research themes include narratives of the Anthropocene, concepts
           of Self, artificial intelligence(s), and machinic aesthetics.
