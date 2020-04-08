@@ -17,8 +17,14 @@ const OrdinaryRambling = (): React.ReactElement => {
       <Slider
         images={[
           { src: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg') },
-          { src: require('images/projects/ordinary-rambling/ordinary-rambling2.jpg') },
-          { src: require('images/projects/ordinary-rambling/ordinary-rambling3.jpg') },
+          {
+            src: require('images/projects/ordinary-rambling/ordinary-rambling2.jpg'),
+            caption: 'Photograph by Maarten Heijer',
+          },
+          {
+            src: require('images/projects/ordinary-rambling/ordinary-rambling3.jpg'),
+            caption: 'Photograph by Maarten Heijer',
+          },
         ]}
       ></Slider>
 
@@ -32,7 +38,6 @@ const OrdinaryRambling = (): React.ReactElement => {
           activity.
         </p>
       </div>
-      <div className="footnote">Photographs by Maarten Heijer.</div>
 
       <Video srcURL={'https://www.youtube.com/embed/5P27VCzvbq8'} title={'Feedself'}></Video>
     </div>

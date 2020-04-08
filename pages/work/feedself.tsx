@@ -12,7 +12,10 @@ const Feedself = (): React.ReactElement => {
       <Slider
         images={[
           { src: require('images/projects/feedself/feedself1.png') },
-          { src: require('images/projects/feedself/feedself2.jpg') },
+          {
+            src: require('images/projects/feedself/feedself2.jpg'),
+            caption: 'Photograph by Franziska Müller Schmidt',
+          },
           { src: require('images/projects/feedself/feedself3.jpg') },
           { src: require('images/projects/feedself/feedself4.jpg') },
         ]}
@@ -28,7 +31,6 @@ const Feedself = (): React.ReactElement => {
           feedself. An infinitely cycling network.
         </p>
       </div>
-      <div className="footnote">Photographs by Franziska Müller Schmidt.</div>
 
       <Video srcURL={'https://www.youtube.com/embed/_4VCEmfpmrI'} title={'Feedself'}></Video>
     </div>
