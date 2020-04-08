@@ -1,20 +1,31 @@
+@import './colors.scss';
+@import './spacing.scss';
+
 html,
 body {
   border: 0;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-body {
+#__next {
+  height: 100%;
+}
+
+.page-content {
   padding-left: 4%;
   padding-right: 4%;
   width: 100%;
   max-width: 1200px;
-  color: black;
+  color: $text-color;
   font-family: sans-serif;
   font-size: 20px;
   text-align: justify;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
 }
 
 ul {
@@ -57,26 +68,24 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #fc8803;
-  color: #fc9403;
-  color: orange;
+  color: $orange;
   transition: color 0.1s ease-in;
 }
 
 a:hover,
 a:hover::selection {
-  color: pink;
+  color: $link-hover-color;
 }
 
 a::selection {
-  color: hotpink;
+  color: $link-selected-color;
 }
 
 blockquote {
   display: block;
   border-width: 2px 0;
   border-style: solid;
-  border-color: #eee;
+  border-color: $blockquote-border-color;
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
@@ -92,7 +101,7 @@ blockquote:before {
   width: 3rem;
   height: 2rem;
   font: 6em/1.08em 'PT Sans', sans-serif;
-  color: #666;
+  color: $blockquote-bar-color;
   text-align: center;
 }
 

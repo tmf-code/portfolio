@@ -1,4 +1,13 @@
+@import './colors.scss';
+@import './spacing.scss';
+
 .footer-bar {
   width: 100%;
-  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: $footer-text-color;
+  margin-top: auto;
+  padding-top: $footer-top-padding;
+  height: $footer-height;
+  font-size: 18px;
 }

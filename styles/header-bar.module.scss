@@ -1,3 +1,5 @@
+@import 'colors.scss';
+
 .header-bar {
   width: 100%;
   display: flex;
@@ -33,11 +35,11 @@
 
   .current-page {
     transition: color 0.15s ease-in;
-    color: black;
+    color: $link-color;
   }
 
   .current-page:hover {
-    color: pink;
+    color: $link-hover-color;
   }
 
   a.current-page {
@@ -53,7 +55,7 @@
     left: calc(50% - 10px);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #000;
+    border-bottom: 10px solid $black;
     clear: both;
   }
 
@@ -65,8 +67,7 @@
     height: 1px;
     top: calc(100% + 15px);
     left: calc(50% + 1px - 100vw + 55%);
-    // border-right: 2px solid #000;
-    border-top: 2px solid #000;
+    border-top: 2px solid $black;
     clear: both;
   }
 }
