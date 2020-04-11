@@ -14,25 +14,34 @@ import type { HairGrid } from './createHairGrid';
 import type { Hair } from './Hair';
 // @ts-ignore
 import type { Mouse } from './Mouse';
+import type p5 from 'p5';
 
 const HomeSketch = (): React.ReactElement => {
   if (process.browser) {
-    const { createHairGird } = require('./createHairGrid');
+    const { createHairGrid } = require('./createHairGrid');
     const sketchDiv = document.getElementsByClassName('sketch')[0] as HTMLDivElement;
 
     const createP5Instance = () => {
       const { createSketch } = require('./createSketch');
       const sketch = createSketch(sketchDiv);
-      const p5 = require('p5');
-      return sketchDiv ? new p5(sketch, sketchDiv) : new p5(sketchDiv);
+      const p5Contructor = require('p5');
+      const p5Instance = sketchDiv
+        ? new p5Contructor(sketch, sketchDiv)
+        : new p5Contructor(sketchDiv);
+      const hairGrid = createHairGrid(p5Instance, sketchDiv.offsetWidth, sketchDiv.offsetHeight);
+
+      p5Instance.draw = () => {
+        p5Instance.background(255);
+        hairGrid.draw();
+      };
+
+      return p5Instance as p5;
     };
 
-    const p5Instance = createP5Instance();
-    const hairGrid = createHairGird(p5Instance, sketchDiv.offsetWidth, sketchDiv.offsetHeight);
-
-    p5Instance.draw = () => {
-      p5Instance.background(255);
-      hairGrid.draw();
+    let p5Instance = createP5Instance();
+    window.onresize = () => {
+      p5Instance.remove();
+      p5Instance = createP5Instance();
     };
   }
 

@@ -63,5 +63,5 @@ export class HairGrid {
   }
 }
 
-export const createHairGird = (p5Instance: p5, width: number, height: number) =>
+export const createHairGrid = (p5Instance: p5, width: number, height: number) =>
   new HairGrid(width, height, p5Instance);
