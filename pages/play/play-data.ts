@@ -10,9 +10,11 @@ export const DollsData: ProjectDescription = {
     { src: require('images/projects/dolls/dolls2.png') },
     { src: require('images/projects/dolls/dolls3.png') },
   ],
-  headerImage: require('images/projects/textures/textures9.png'),
+  headerImage: require('images/projects/dolls/dolls1.png'),
 };
 
 export const PlayData = {
   DollsData,
 };
+
+export const PlayDataList = Object.values(PlayData);

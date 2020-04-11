@@ -1,31 +1,38 @@
-import { HeaderBarProps } from '../../components/header-bar';
+import { PlayDataList } from './play-data';
+import { ProjectCard } from '../../components/project-card';
 
-export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps;
+const ProjectIndex = (): React.ReactElement => {
+  const projects = PlayDataList;
 
-const defaultProjectIndexProps = {
-  projects: [{ href: 'play/dolls', text: 'dolls' }],
-};
-
-const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
-  const list = (
+  const list = (projects: typeof PlayDataList) => (
     <ul>
       {projects.map((project, index) => (
         <li key={index}>
-          <a className="project-list" href={project.href}>
-            {project.text}
-          </a>
+          <ProjectCard
+            title={project.title}
+            href={project.href}
+            imgSrc={project.headerImage}
+            exhibited={project.exhibited}
+          />
         </li>
       ))}
     </ul>
   );
+  const years = projects.map(project => project.date);
+  const uniqueYears = Array.from(new Set(years)).sort().reverse();
+
   return (
     <div className="container">
-      <h2>in progress</h2>
-      {list}
+      {uniqueYears.map((selectedYear, index) => {
+        return (
+          <div key={index}>
+            <h2> {selectedYear} </h2>
+            {list(projects.filter(project => project.date === selectedYear))}
+          </div>
+        );
+      })}
     </div>
   );
 };
-
-ProjectIndex.defaultProps = defaultProjectIndexProps;
 
 export default ProjectIndex;
