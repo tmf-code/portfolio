@@ -1,0 +1,69 @@
+@import 'colors.scss';
+@import 'spacing.scss';
+@import 'fonts.scss';
+
+.project-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  @include respond-to(medium-screens) {
+    flex-direction: column;
+  }
+  @include respond-to(handhelds) {
+    flex-direction: column;
+  }
+
+  margin-bottom: 15px;
+}
+
+.project-image {
+  padding-right: 7.5px;
+  width: 50%;
+  @include respond-to(medium-screens) {
+    width: 100%;
+    padding-right: 0px;
+  }
+  @include respond-to(handhelds) {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
+
+.project-text {
+  width: 50%;
+  padding-left: 7.5px;
+  @include respond-to(medium-screens) {
+    width: 100%;
+    padding-left: 0;
+  }
+  @include respond-to(handhelds) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.project-exhibited {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  @include respond-to(medium-screens) {
+    margin-block-end: 1em;
+  }
+  @include respond-to(handhelds) {
+    margin-block-end: 1em;
+
+    @include choose-font(secondary);
+  }
+}
+
+.project-title {
+  display: block;
+  margin-bottom: 0.15em;
+  @include choose-font(heading);
+  font-weight: normal;
+
+  @include respond-to(handhelds) {
+    @include choose-font(body);
+    font-weight: bold;
+  }
+}

@@ -5,7 +5,7 @@ export const AlacrityData: ProjectDescription = {
   href: 'work/alacrity',
 
   date: '2019',
-  exhibited: 'Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.',
+  exhibited: 'Post.Digital.Dreams, December-January 2020, Inbetween Conditions, Tbilisi.',
   images: [
     { src: require('images/projects/alacrity/alacrity1.png') },
     { src: require('images/projects/alacrity/alacrity2.png') },
@@ -52,7 +52,7 @@ export const CoastData: ProjectDescription = {
   href: 'work/coast',
 
   date: '2019',
-  exhibited: 'As We Know It, 29-30 June 2019, Vondelbunker, Amsterdam.',
+  exhibited: 'As We Know It, June 2019, Vondelbunker, Amsterdam.',
   images: [
     { src: require('images/projects/coast/coast1.jpg') },
     { src: require('images/projects/coast/coast2.jpg') },
@@ -70,8 +70,8 @@ export const FeedSelfData: ProjectDescription = {
 
   date: '2018',
   exhibited: [
-    'Common Inn, 18 April 2019, Het Nieuwe Instituut, Rotterdam.',
-    'Hacking Nature, 29-30 June 2018, De Samenscholing, The Hague.',
+    'Common Inn, April 2019, Het Nieuwe Instituut, Rotterdam.',
+    'Hacking Nature, June 2018, De Samenscholing, The Hague.',
   ],
   images: [
     { src: require('images/projects/feedself/feedself1.png') },
@@ -114,7 +114,7 @@ export const OrdinaryRamblingyData: ProjectDescription = {
 
   date: '2018',
   exhibited: [
-    'BYOB, 29 September 2018, Nicolaikerk, Utrecht.',
+    'BYOB, September 2018, Nicolaikerk, Utrecht.',
     'Journeys into Diversity, March 2019, Bestuursgebouw, Utrecht University.',
     'Journeys into Diversity, June 2019, Victor J. Koningsbergergebouw, Utrecht University.',
   ],
