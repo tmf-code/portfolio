@@ -1,2 +1,2 @@
 $footer-top-padding: 30px;
-$footer-height: calc(30px + $footer-top-padding);
+$footer-height: calc((30px + #{$footer-top-padding}));

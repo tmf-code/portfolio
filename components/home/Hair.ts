@@ -1,5 +1,4 @@
-import { Vector, Color } from 'p5';
-import { p5Instance } from './p5Instance';
+import p5, { Vector, Color } from 'p5';
 import { Mouse } from './Mouse';
 
 type Quad = [number, number, number, number, number, number, number, number];
@@ -12,6 +11,7 @@ export class Hair {
   growthRate: number;
   color: Color;
   startThickness: number;
+  p5Instance: p5;
 
   private goToAngle: number = ((Math.random() - 1) * Math.PI) / 2.0;
 
@@ -23,6 +23,7 @@ export class Hair {
     color: Color,
     startThickness: number,
     growthRate: number,
+    p5Instance: p5,
   ) {
     this.rootPosition = rootPosition.copy();
     this.tipPosition = tipPosition.copy();
@@ -31,6 +32,7 @@ export class Hair {
     this.color = color;
     this.startThickness = startThickness;
     this.growthRate = growthRate;
+    this.p5Instance = p5Instance;
   }
 
   growStep(tipPosition: Vector, direction: Vector, growthRate: number): Vector {
@@ -121,8 +123,8 @@ export class Hair {
   }
 
   draw() {
-    p5Instance.noStroke();
-    p5Instance.fill(this.color);
+    this.p5Instance.noStroke();
+    this.p5Instance.fill(this.color);
 
     this.tipPosition = this.collideWith(
       this.rootPosition,
@@ -139,7 +141,7 @@ export class Hair {
       this.startThickness,
     );
 
-    p5Instance.quad(...quad);
+    this.p5Instance.quad(...quad);
 
     this.tipPosition = this.grow(
       this.rootPosition,

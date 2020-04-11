@@ -1,7 +1,6 @@
-import { Vector } from 'p5';
+import p5, { Vector } from 'p5';
 import { grid } from './grid';
 import { Hair } from './Hair';
-import { p5Instance } from './p5Instance';
 
 const randRange = (minimum: number, maximum: number) =>
   Math.random() * (maximum - minimum) + minimum;
@@ -11,7 +10,8 @@ const jitter = (jitterRange: number) =>
 
 export class HairGrid {
   grid: Hair[];
-  constructor(screenWidth: number, screenHeight: number) {
+  p5Instance: p5;
+  constructor(screenWidth: number, screenHeight: number, p5Instance: p5) {
     const maxDimension = Math.max(screenWidth, screenHeight) * 2.5;
 
     const cellWidth = 0.01 * maxDimension;
@@ -39,6 +39,7 @@ export class HairGrid {
 
     const color = p5Instance.color(0, 0, 0, 200);
 
+    this.p5Instance = p5Instance;
     this.grid = positions.map(
       (position, index) =>
         new Hair(
@@ -49,6 +50,7 @@ export class HairGrid {
           color,
           thickness,
           growthRates[index],
+          this.p5Instance,
         ),
     );
   }
@@ -58,4 +60,5 @@ export class HairGrid {
   }
 }
 
-export const hairGrid = new HairGrid(window.innerWidth, window.innerHeight);
+export const createHairGird = (p5Instance: p5, width: number, height: number) =>
+  new HairGrid(width, height, p5Instance);

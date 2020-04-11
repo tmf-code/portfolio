@@ -1,6 +1,7 @@
+import { HomeSketch } from '../components/home/HomeSketch';
 const Home = (): React.ReactElement => (
-  <div className="container">
-    <h2>home</h2>
+  <div style={{ height: '100%' }} className="container">
+    <HomeSketch />
   </div>
 );
 
