@@ -1,9 +1,11 @@
 import { ProjectDescription } from '../../components/project-description';
 
 export const AlacrityData: ProjectDescription = {
+  title: 'alacrity',
+  href: 'work/alacrity',
+
   date: '2019',
   exhibited: 'Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.',
-  title: 'alacrity',
   images: [
     { src: require('images/projects/alacrity/alacrity1.png') },
     { src: require('images/projects/alacrity/alacrity2.png') },
@@ -15,9 +17,11 @@ export const AlacrityData: ProjectDescription = {
 };
 
 export const AmbientMatterData: ProjectDescription = {
+  title: 'ambient matter',
+  href: 'work/ambient-matter',
+
   date: '2019',
   exhibited: 'Work in Progress.',
-  title: 'ambient matter',
   images: [
     { src: require('images/projects/ambient-matter/ambience1.jpg'), caption: 'Image' },
     { src: require('images/projects/ambient-matter/ambience2.jpg'), caption: 'Subject' },
@@ -31,9 +35,11 @@ export const AmbientMatterData: ProjectDescription = {
 };
 
 export const BeepTextData: ProjectDescription = {
+  title: 'beep text',
+  href: 'work/beep-text',
+
   date: '2019',
   exhibited: 'Alternate Perspectives coursework, ArtScience, KABK.',
-  title: 'beep text',
   images: [
     { src: require('images/projects/beep-text/beeptext1.jpg') },
     { src: require('images/projects/beep-text/beeptext2.jpg') },
@@ -42,9 +48,11 @@ export const BeepTextData: ProjectDescription = {
 };
 
 export const CoastData: ProjectDescription = {
+  title: 'the coast was clear',
+  href: 'work/coast',
+
   date: '2019',
   exhibited: 'As We Know It, 29-30 June 2019, Vondelbunker, Amsterdam.',
-  title: 'the coast was clear',
   images: [
     { src: require('images/projects/coast/coast1.jpg') },
     { src: require('images/projects/coast/coast2.jpg') },
@@ -57,12 +65,14 @@ export const CoastData: ProjectDescription = {
 };
 
 export const FeedSelfData: ProjectDescription = {
+  title: 'feedself',
+  href: 'work/feedself',
+
   date: '2018',
   exhibited: [
     'Common Inn, 18 April 2019, Het Nieuwe Instituut, Rotterdam.',
     'Hacking Nature, 29-30 June 2018, De Samenscholing, The Hague.',
   ],
-  title: 'feedself',
   images: [
     { src: require('images/projects/feedself/feedself1.png') },
     {
@@ -76,9 +86,11 @@ export const FeedSelfData: ProjectDescription = {
 };
 
 export const GANData: ProjectDescription = {
+  title: 'cephalopod crania',
+  href: 'work/gan',
+
   date: '2019',
   exhibited: 'Neural Networks coursework, LIACS, Leiden University.',
-  title: 'cephalopod crania',
   images: [
     { src: require('images/projects/gan/gan1.png') },
     { src: require('images/projects/gan/gan2.jpg') },
@@ -88,21 +100,24 @@ export const GANData: ProjectDescription = {
 };
 
 export const InterpassivityData: ProjectDescription = {
+  title: 'beyond interpassivity',
+  href: 'work/interpassivity',
   date: '2018',
   exhibited: 'Time as Matter coursework, ArtScience, KABK',
-  title: 'beyond interpassivity',
   images: [{ src: require('images/projects/interpassivity/interpassivity1.jpg') }],
   headerImage: require('images/projects/interpassivity/interpassivity1.jpg'),
 };
 
 export const OrdinaryRamblingyData: ProjectDescription = {
+  title: 'ordinary rambling',
+  href: 'work/ordinary-rambling',
+
   date: '2018',
   exhibited: [
     'BYOB, 29 September 2018, Nicolaikerk, Utrecht.',
     'Journeys into Diversity, March 2019, Bestuursgebouw, Utrecht University.',
     'Journeys into Diversity, June 2019, Victor J. Koningsbergergebouw, Utrecht University.',
   ],
-  title: 'ordinary rambling',
   images: [
     { src: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg') },
     {
@@ -118,9 +133,11 @@ export const OrdinaryRamblingyData: ProjectDescription = {
 };
 
 export const TexturesData: ProjectDescription = {
+  title: 'temporal textures',
+  href: 'work/textures',
+
   date: '2019',
   exhibited: 'The Four Ecologies coursework, ArtScience, KABK.',
-  title: 'temporal textures',
   images: [
     { src: require('images/projects/textures/textures9.png') },
     { src: require('images/projects/textures/textures0.jpg') },
@@ -132,18 +149,6 @@ export const TexturesData: ProjectDescription = {
     { src: require('images/projects/textures/textures6.jpg') },
     { src: require('images/projects/textures/textures7.jpg') },
     { src: require('images/projects/textures/textures8.jpg') },
-  ],
-  headerImage: require('images/projects/textures/textures9.png'),
-};
-
-export const DollsData: ProjectDescription = {
-  date: '2019',
-  exhibited: 'Work in progress.',
-  title: 'dolls',
-  images: [
-    { src: require('images/projects/dolls/dolls1.png') },
-    { src: require('images/projects/dolls/dolls2.png') },
-    { src: require('images/projects/dolls/dolls3.png') },
   ],
   headerImage: require('images/projects/textures/textures9.png'),
 };

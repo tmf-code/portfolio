@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { ProjectTop } from '../../components/project-top';
-import { DollsData } from '../work/work-data';
+import { DollsData } from '../play/play-data';
 
 const Dolls = (): React.ReactElement => {
   return (

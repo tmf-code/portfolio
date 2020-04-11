@@ -2,6 +2,7 @@ import { ProjectDescription } from '../../components/project-description';
 
 export const DollsData: ProjectDescription = {
   date: '2019',
+  href: 'play/dolls',
   exhibited: 'Work in progress.',
   title: 'dolls',
   images: [
