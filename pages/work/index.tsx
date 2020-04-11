@@ -1,4 +1,5 @@
 import { WorkDataList } from './work-data';
+import { ProjectCard } from '../../components/project-card';
 
 const ProjectIndex = (): React.ReactElement => {
   const projects = WorkDataList;
@@ -7,17 +8,12 @@ const ProjectIndex = (): React.ReactElement => {
     <ul>
       {projects.map((project, index) => (
         <li key={index}>
-          <div className="projectItem">
-            <div className="headerImage">
-              <img src={project.headerImage} width="100%" alt={project.title} />
-            </div>
-            <div className="headerInfo">
-              <a className="project-list" href={project.href}>
-                {project.title}
-              </a>
-              {project.exhibited && <p className="description">{project.exhibited}</p>}
-            </div>
-          </div>
+          <ProjectCard
+            title={project.title}
+            href={project.href}
+            imgSrc={project.headerImage}
+            exhibited={project.exhibited}
+          />
         </li>
       ))}
     </ul>

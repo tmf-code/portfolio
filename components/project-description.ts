@@ -7,5 +7,5 @@ export type ProjectDescription = {
     src: string;
     caption?: string;
   }[];
-  headerImage?: string;
+  headerImage: string;
 };
