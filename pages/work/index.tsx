@@ -22,7 +22,9 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
     <ul>
       {projects.map((project, index) => (
         <li key={index}>
-          <a href={project.href}>{project.text}</a>
+          <a className="project-list" href={project.href}>
+            {project.text}
+          </a>
         </li>
       ))}
     </ul>

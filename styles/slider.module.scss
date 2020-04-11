@@ -17,5 +17,5 @@
 .slider-caption {
   text-align: center;
   margin-top: 5px;
-  font-size: $small;
+  @include choose-font(secondary);
 }

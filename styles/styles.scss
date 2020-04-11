@@ -11,6 +11,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  @include choose-font(body);
 }
 
 canvas {
@@ -48,8 +49,7 @@ canvas {
 
   color: $text-color;
   font-family: sans-serif;
-  font-size: $regular-text;
-  text-align: justify;
+  @include choose-font(body);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -76,24 +76,27 @@ p {
 }
 
 h2 {
-  font-style: bold;
+  @include choose-font(heading);
 }
 
 .date {
-  font-size: $large;
+  @include choose-font(body);
   margin-bottom: 1em;
 }
 
 .exhibited {
-  font-size: $small;
+  @include choose-font(body);
   margin-bottom: 0.5em;
 }
 
 .footnote {
-  font-size: $small;
+  @include choose-font(secondary);
   margin-bottom: 1em;
 }
-
+.project-list {
+  @include choose-font(heading);
+  font-weight: unset;
+}
 a {
   text-decoration: none;
   color: $orange;
@@ -139,5 +142,5 @@ blockquote:after {
   content: '\2013 \2003'attr(cite);
   display: block;
   text-align: right;
-  font-size: 0.875em;
+  @include choose-font(secondary);
 }

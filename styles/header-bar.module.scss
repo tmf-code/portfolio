@@ -1,4 +1,6 @@
 @import 'colors.scss';
+@import 'spacing.scss';
+@import 'fonts.scss';
 
 .header-bar {
   width: 100%;
@@ -27,6 +29,11 @@
 
   h2 {
     display: inline;
+
+    @include choose-font(heading);
+    @include respond-to(handhelds) {
+      @include choose-font(body);
+    }
   }
 
   li {

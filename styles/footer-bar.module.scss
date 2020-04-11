@@ -10,5 +10,5 @@
   margin-top: auto;
   padding-top: $footer-top-padding;
   height: $footer-height;
-  font-size: $small;
+  @include choose-font(secondary);
 }
