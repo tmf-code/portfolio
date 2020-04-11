@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import './spacing.scss';
+@import './fonts.scss';
 
 html,
 body {
@@ -20,7 +21,7 @@ body {
   max-width: 1200px;
   color: $text-color;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: $regular-text;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -52,17 +53,17 @@ h2 {
 }
 
 .date {
-  font-size: 22px;
+  font-size: $large;
   margin-bottom: 1em;
 }
 
 .exhibited {
-  font-size: 18px;
+  font-size: $small;
   margin-bottom: 0.5em;
 }
 
 .footnote {
-  font-size: 18px;
+  font-size: $small;
   margin-bottom: 1em;
 }
 
@@ -81,6 +82,7 @@ a::selection {
   color: $link-selected-color;
 }
 
+// line across the top & bottom
 blockquote {
   display: block;
   border-width: 2px 0;
@@ -92,12 +94,12 @@ blockquote {
   font-style: italic;
 }
 
+// text formatting
 blockquote:before {
   position: absolute;
   top: 0em;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
   width: 3rem;
   height: 2rem;
   font: 6em/1.08em 'PT Sans', sans-serif;
@@ -105,6 +107,7 @@ blockquote:before {
   text-align: center;
 }
 
+// label/ citation
 blockquote:after {
   content: '\2013 \2003'attr(cite);
   display: block;

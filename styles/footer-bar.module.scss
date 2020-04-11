@@ -1,5 +1,6 @@
 @import './colors.scss';
 @import './spacing.scss';
+@import './fonts.scss';
 
 .footer-bar {
   width: 100%;
@@ -9,5 +10,5 @@
   margin-top: auto;
   padding-top: $footer-top-padding;
   height: $footer-height;
-  font-size: 18px;
+  font-size: $small;
 }
