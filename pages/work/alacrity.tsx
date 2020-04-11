@@ -1,6 +1,14 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 
+const images = [
+  { src: require('images/projects/alacrity/alacrity1.png') },
+  { src: require('images/projects/alacrity/alacrity2.png') },
+  { src: require('images/projects/alacrity/alacrity3.jpg') },
+  { src: require('images/projects/alacrity/alacrity4.jpg') },
+  { src: require('images/projects/alacrity/alacrity5.jpg') },
+];
+
 const Alacrity = (): React.ReactElement => {
   return (
     <div className="container">
@@ -10,15 +18,7 @@ const Alacrity = (): React.ReactElement => {
         Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.
       </div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/alacrity/alacrity1.png') },
-          { src: require('images/projects/alacrity/alacrity2.png') },
-          { src: require('images/projects/alacrity/alacrity3.jpg') },
-          { src: require('images/projects/alacrity/alacrity4.jpg') },
-          { src: require('images/projects/alacrity/alacrity5.jpg') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>

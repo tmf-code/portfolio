@@ -1,6 +1,16 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 
+const images = [
+  { src: require('images/projects/feedself/feedself1.png') },
+  {
+    src: require('images/projects/feedself/feedself2.jpg'),
+    caption: 'Photograph by Franziska Müller Schmidt',
+  },
+  { src: require('images/projects/feedself/feedself3.jpg') },
+  { src: require('images/projects/feedself/feedself4.jpg') },
+];
+
 const Feedself = (): React.ReactElement => {
   return (
     <div className="container">
@@ -9,17 +19,7 @@ const Feedself = (): React.ReactElement => {
       <div className="exhibited">Hacking Nature, 29-30 June 2018, De Samenscholing, The Hague.</div>
       <div className="exhibited">Common Inn, 18 April 2019, Het Nieuwe Instituut, Rotterdam.</div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/feedself/feedself1.png') },
-          {
-            src: require('images/projects/feedself/feedself2.jpg'),
-            caption: 'Photograph by Franziska Müller Schmidt',
-          },
-          { src: require('images/projects/feedself/feedself3.jpg') },
-          { src: require('images/projects/feedself/feedself4.jpg') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>

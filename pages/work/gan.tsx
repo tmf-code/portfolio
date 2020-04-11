@@ -1,5 +1,10 @@
 import { Slider } from '../../components/slider';
 
+const images = [
+  { src: require('images/projects/gan/gan1.png') },
+  { src: require('images/projects/gan/gan2.jpg') },
+  { src: require('images/projects/gan/gan3.jpg') },
+];
 const GAN = (): React.ReactElement => {
   return (
     <div className="container">
@@ -7,13 +12,7 @@ const GAN = (): React.ReactElement => {
       <div className="date">2019</div>
       <div className="exhibited">Neural Networks coursework, LIACS, Leiden University.</div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/gan/gan1.png') },
-          { src: require('images/projects/gan/gan2.jpg') },
-          { src: require('images/projects/gan/gan3.jpg') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>

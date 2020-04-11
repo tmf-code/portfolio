@@ -1,6 +1,14 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 
+const images = [
+  { src: require('images/projects/coast/coast1.jpg') },
+  { src: require('images/projects/coast/coast2.jpg') },
+  { src: require('images/projects/coast/coast3.jpg') },
+  { src: require('images/projects/coast/coast4.jpg') },
+  { src: require('images/projects/coast/coast5.jpg') },
+  { src: require('images/projects/coast/coast6.png') },
+];
 const Coast = (): React.ReactElement => {
   return (
     <div className="container">
@@ -20,16 +28,7 @@ const Coast = (): React.ReactElement => {
         </p>
       </div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/coast/coast1.jpg') },
-          { src: require('images/projects/coast/coast2.jpg') },
-          { src: require('images/projects/coast/coast3.jpg') },
-          { src: require('images/projects/coast/coast4.jpg') },
-          { src: require('images/projects/coast/coast5.jpg') },
-          { src: require('images/projects/coast/coast6.png') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <blockquote cite="">

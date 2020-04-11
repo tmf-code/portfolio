@@ -1,5 +1,11 @@
 import { Slider } from '../../components/slider';
 
+const images = [
+  { src: require('images/projects/dolls/dolls1.png') },
+  { src: require('images/projects/dolls/dolls2.png') },
+  { src: require('images/projects/dolls/dolls3.png') },
+];
+
 const Dolls = (): React.ReactElement => {
   return (
     <div className="container">
@@ -7,13 +13,7 @@ const Dolls = (): React.ReactElement => {
       <div className="date">2019</div>
       <div className="exhibited">Work in progress</div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/dolls/dolls1.png') },
-          { src: require('images/projects/dolls/dolls2.png') },
-          { src: require('images/projects/dolls/dolls3.png') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>Play.</p>

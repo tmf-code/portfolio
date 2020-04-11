@@ -1,6 +1,17 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 
+const images = [
+  { src: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg') },
+  {
+    src: require('images/projects/ordinary-rambling/ordinary-rambling2.jpg'),
+    caption: 'Photograph by Maarten Heijer',
+  },
+  {
+    src: require('images/projects/ordinary-rambling/ordinary-rambling3.jpg'),
+    caption: 'Photograph by Maarten Heijer',
+  },
+];
 const OrdinaryRambling = (): React.ReactElement => {
   return (
     <div className="container">
@@ -14,19 +25,7 @@ const OrdinaryRambling = (): React.ReactElement => {
         Journeys into Diversity, June 2019, Victor J. Koningsbergergebouw, Utrecht University.
       </div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg') },
-          {
-            src: require('images/projects/ordinary-rambling/ordinary-rambling2.jpg'),
-            caption: 'Photograph by Maarten Heijer',
-          },
-          {
-            src: require('images/projects/ordinary-rambling/ordinary-rambling3.jpg'),
-            caption: 'Photograph by Maarten Heijer',
-          },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>

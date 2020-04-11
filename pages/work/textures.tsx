@@ -1,6 +1,19 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 
+const images = [
+  { src: require('images/projects/textures/textures9.png') },
+  { src: require('images/projects/textures/textures0.jpg') },
+  { src: require('images/projects/textures/textures1.jpg') },
+  { src: require('images/projects/textures/textures2.jpg') },
+  { src: require('images/projects/textures/textures3.jpg') },
+  { src: require('images/projects/textures/textures4.jpg') },
+  { src: require('images/projects/textures/textures5.jpg') },
+  { src: require('images/projects/textures/textures6.jpg') },
+  { src: require('images/projects/textures/textures7.jpg') },
+  { src: require('images/projects/textures/textures8.jpg') },
+];
+
 const Textures = (): React.ReactElement => {
   return (
     <div className="container">
@@ -8,20 +21,7 @@ const Textures = (): React.ReactElement => {
       <div className="date">2019</div>
       <div className="exhibited">The Four Ecologies coursework, ArtScience, KABK.</div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/textures/textures9.png') },
-          { src: require('images/projects/textures/textures0.jpg') },
-          { src: require('images/projects/textures/textures1.jpg') },
-          { src: require('images/projects/textures/textures2.jpg') },
-          { src: require('images/projects/textures/textures3.jpg') },
-          { src: require('images/projects/textures/textures4.jpg') },
-          { src: require('images/projects/textures/textures5.jpg') },
-          { src: require('images/projects/textures/textures6.jpg') },
-          { src: require('images/projects/textures/textures7.jpg') },
-          { src: require('images/projects/textures/textures8.jpg') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>

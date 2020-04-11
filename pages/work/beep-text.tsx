@@ -1,6 +1,11 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 
+const images = [
+  { src: require('images/projects/beep-text/beeptext1.jpg') },
+  { src: require('images/projects/beep-text/beeptext2.jpg') },
+];
+
 const Beeptext = (): React.ReactElement => {
   return (
     <div className="container">
@@ -26,12 +31,7 @@ const Beeptext = (): React.ReactElement => {
         </blockquote>
       </div>
 
-      <Slider
-        images={[
-          { src: require('images/projects/beep-text/beeptext1.jpg') },
-          { src: require('images/projects/beep-text/beeptext2.jpg') },
-        ]}
-      ></Slider>
+      <Slider images={images}></Slider>
 
       <div className="text">
         <p>
