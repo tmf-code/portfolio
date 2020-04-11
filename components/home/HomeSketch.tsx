@@ -1,4 +1,19 @@
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-var-requires */
+
+// This triggers auto rebuild for conditional imports
+
+// @ts-ignore
+import type { createHairGird } from './createHairGrid';
+// @ts-ignore
+import type { createSketch } from './createSketch';
+// @ts-ignore
+import type { HairGrid } from './createHairGrid';
+// @ts-ignore
+import type { Hair } from './Hair';
+// @ts-ignore
+import type { Mouse } from './Mouse';
 
 const HomeSketch = (): React.ReactElement => {
   if (process.browser) {
