@@ -1,88 +1,28 @@
-/* eslint-disable react/prop-types */
-import { HeaderBarProps } from '../../components/header-bar';
+import { WorkDataList } from './work-data';
 
-export type ProjectIndexProps = typeof defaultProjectIndexProps & HeaderBarProps;
+const ProjectIndex = (): React.ReactElement => {
+  const projects = WorkDataList;
 
-const defaultProjectIndexProps = {
-  projects: [
-    {
-      href: 'work/alacrity',
-      text: 'alacrity',
-      year: '2019',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/ambient-matter',
-      text: 'ambient matter',
-      year: '2019',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/beep-text',
-      text: 'beep text',
-      year: '2019',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/coast',
-      text: 'the coast was clear',
-      year: '2019',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/feedself',
-      text: 'feedself',
-      year: '2018',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/gan',
-      text: 'generative adversarial networks',
-      year: '2019',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/interpassivity',
-      text: 'beyond interpassivity',
-      year: '2018',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/ordinary-rambling',
-      text: 'ordinary rambling',
-      year: '2018',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-    {
-      href: 'work/textures',
-      text: 'temporal textures',
-      year: '2019',
-      imgURL: require('images/projects/alacrity/alacrity1.png'),
-    },
-  ],
-};
-
-const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
-  const list = (projects: ProjectIndexProps['projects']) => (
+  const list = (projects: typeof WorkDataList) => (
     <ul>
       {projects.map((project, index) => (
         <li key={index}>
           <div className="projectItem">
             <div className="headerImage">
-              <img src={project.imgURL} width="100%" alt={project.text} />
+              <img src={project.headerImage} width="100%" alt={project.title} />
             </div>
             <div className="headerInfo">
               <a className="project-list" href={project.href}>
-                {project.text}
+                {project.title}
               </a>
-              <p className="description"> more text</p>
+              {project.exhibited && <p className="description">{project.exhibited}</p>}
             </div>
           </div>
         </li>
       ))}
     </ul>
   );
-  const years = projects.map(project => project.year);
+  const years = projects.map(project => project.date);
   const uniqueYears = Array.from(new Set(years)).sort().reverse();
 
   return (
@@ -91,14 +31,12 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
         return (
           <div key={index}>
             <h2> {selectedYear} </h2>
-            {list(projects.filter(project => project.year === selectedYear))}
+            {list(projects.filter(project => project.date === selectedYear))}
           </div>
         );
       })}
     </div>
   );
 };
-
-ProjectIndex.defaultProps = defaultProjectIndexProps;
 
 export default ProjectIndex;
