@@ -67,11 +67,17 @@ const ProjectIndex = ({ projects }: ProjectIndexProps): React.ReactElement => {
     <ul>
       {projects.map((project, index) => (
         <li key={index}>
-          <img src={project.imgURL} width="50%" alt={project.text} />
-          {/* <ProjectImage src={project.imgURL} width="100%" height="1000px"></ProjectImage> */}
-          <a className="project-list" href={project.href}>
-            {project.text}
-          </a>
+          <div className="projectItem">
+            <div className="headerImage">
+              <img src={project.imgURL} width="100%" alt={project.text} />
+            </div>
+            <div className="headerInfo">
+              <a className="project-list" href={project.href}>
+                {project.text}
+              </a>
+              <p className="description"> more text</p>
+            </div>
+          </div>
         </li>
       ))}
     </ul>
