@@ -1,3 +1,4 @@
+import { RelativeMouse } from './RelativeMouse';
 import p5, { Vector, Color } from 'p5';
 import { Mouse } from './Mouse';
 
@@ -13,6 +14,7 @@ export class Hair {
   startThickness: number;
   p5Instance: p5;
   screenWidth: number;
+  relativeMouse: RelativeMouse;
 
   private goToAngle: number = ((Math.random() - 1) * Math.PI) / 2.0;
 
@@ -26,6 +28,7 @@ export class Hair {
     growthRate: number,
     p5Instance: p5,
     screenWidth: number,
+    relativeMouse: RelativeMouse,
   ) {
     this.rootPosition = rootPosition.copy();
     this.tipPosition = tipPosition.copy();
@@ -36,6 +39,7 @@ export class Hair {
     this.growthRate = growthRate;
     this.p5Instance = p5Instance;
     this.screenWidth = screenWidth;
+    this.relativeMouse = relativeMouse;
   }
 
   growStep(tipPosition: Vector, direction: Vector, growthRate: number): Vector {
@@ -132,7 +136,7 @@ export class Hair {
     this.tipPosition = this.collideWith(
       this.rootPosition,
       this.tipPosition,
-      Mouse.PositionVector(),
+      this.relativeMouse.positionVector(),
       (300 / 1920) * this.screenWidth,
     );
 

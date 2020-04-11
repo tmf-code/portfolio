@@ -1,6 +1,7 @@
 import p5, { Vector } from 'p5';
 import { grid } from './grid';
 import { Hair } from './Hair';
+import { RelativeMouse } from './RelativeMouse';
 
 const randRange = (minimum: number, maximum: number) =>
   Math.random() * (maximum - minimum) + minimum;
@@ -12,7 +13,12 @@ export class HairGrid {
   grid: Hair[];
   p5Instance: p5;
   screenWidth: number;
-  constructor(screenWidth: number, screenHeight: number, p5Instance: p5) {
+  constructor(
+    screenWidth: number,
+    screenHeight: number,
+    p5Instance: p5,
+    container: HTMLDivElement,
+  ) {
     const maxDimension = Math.max(screenWidth, screenHeight) * 2.5;
 
     const cellWidth = 0.01 * maxDimension;
@@ -54,6 +60,7 @@ export class HairGrid {
           growthRates[index],
           this.p5Instance,
           this.screenWidth,
+          new RelativeMouse(container),
         ),
     );
   }
@@ -63,5 +70,10 @@ export class HairGrid {
   }
 }
 
-export const createHairGrid = (p5Instance: p5, width: number, height: number) =>
-  new HairGrid(width, height, p5Instance);
+const createHairGrid = (p5Instance: p5, width: number, height: number, container: HTMLDivElement) =>
+  new HairGrid(width, height, p5Instance, container);
+
+type CreateHairGrid = typeof createHairGrid;
+export type { CreateHairGrid };
+
+export { createHairGrid };

@@ -9,7 +9,7 @@ import type { createHairGird } from './createHairGrid';
 // @ts-ignore
 import type { createSketch } from './createSketch';
 // @ts-ignore
-import type { HairGrid } from './createHairGrid';
+import type { HairGrid, CreateHairGrid } from './createHairGrid';
 // @ts-ignore
 import type { Hair } from './Hair';
 // @ts-ignore
@@ -18,7 +18,7 @@ import type p5 from 'p5';
 
 const HomeSketch = (): React.ReactElement => {
   if (process.browser) {
-    const { createHairGrid } = require('./createHairGrid');
+    const { createHairGrid }: { createHairGrid: CreateHairGrid } = require('./createHairGrid');
     const sketchDiv = document.getElementsByClassName('sketch')[0] as HTMLDivElement;
 
     const createP5Instance = () => {
@@ -28,7 +28,12 @@ const HomeSketch = (): React.ReactElement => {
       const p5Instance = sketchDiv
         ? new p5Contructor(sketch, sketchDiv)
         : new p5Contructor(sketchDiv);
-      const hairGrid = createHairGrid(p5Instance, sketchDiv.offsetWidth, sketchDiv.offsetHeight);
+      const hairGrid: HairGrid = createHairGrid(
+        p5Instance,
+        sketchDiv.offsetWidth,
+        sketchDiv.offsetHeight,
+        sketchDiv,
+      );
 
       p5Instance.draw = () => {
         p5Instance.background(255);
