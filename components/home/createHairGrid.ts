@@ -23,12 +23,12 @@ export class HairGrid {
 
     const cellWidth = 0.01 * maxDimension;
     const cellHeight = 0.01 * maxDimension;
-    const thickness = 0.003 * maxDimension;
+    const thickness = 0.01 * maxDimension;
     const positionJitterRange = 0.005 * maxDimension;
     const growthMin = 0.00003 * maxDimension;
     const growthMax = 0.00008 * maxDimension;
-    const lengthMin = 0.01 * maxDimension;
-    const lengthMax = 0.028 * maxDimension;
+    const lengthMin = 0.005 * maxDimension;
+    const lengthMax = 0.01 * maxDimension;
 
     const directionLeft = -0.1;
     const directionRight = 0.8;
