@@ -8,7 +8,6 @@ $heading-font-size: 24pt;
 @mixin choose-font($font) {
   @if $font == body {
     font-size: $body-font-size;
-    line-height: 1.25em;
     letter-spacing: 0.015em;
   } @else if $font == secondary {
     font-size: $secondary-font-size;
