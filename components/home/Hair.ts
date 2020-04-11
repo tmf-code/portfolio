@@ -12,6 +12,7 @@ export class Hair {
   color: Color;
   startThickness: number;
   p5Instance: p5;
+  screenWidth: number;
 
   private goToAngle: number = ((Math.random() - 1) * Math.PI) / 2.0;
 
@@ -24,6 +25,7 @@ export class Hair {
     startThickness: number,
     growthRate: number,
     p5Instance: p5,
+    screenWidth: number,
   ) {
     this.rootPosition = rootPosition.copy();
     this.tipPosition = tipPosition.copy();
@@ -33,6 +35,7 @@ export class Hair {
     this.startThickness = startThickness;
     this.growthRate = growthRate;
     this.p5Instance = p5Instance;
+    this.screenWidth = screenWidth;
   }
 
   growStep(tipPosition: Vector, direction: Vector, growthRate: number): Vector {
@@ -130,7 +133,7 @@ export class Hair {
       this.rootPosition,
       this.tipPosition,
       Mouse.PositionVector(),
-      300,
+      (300 / 1920) * this.screenWidth,
     );
 
     const quad = this.shape(

@@ -13,8 +13,17 @@ export class Mouse {
     this.velocityVector = new Vector().set(this.position[0], this.position[1]);
     document.addEventListener('mousemove', (event: MouseEvent) => {
       const prevPosition = this.positionVector.copy();
-      // const [scaleX, scaleY] = [window.innerWidth, window.innerHeight];
       this.position = [event.clientX, event.clientY];
+      this.positionVector = new Vector().set(this.position[0], this.position[1]);
+
+      this.velocityVector = this.positionVector.copy().sub(prevPosition);
+      this.timeout && clearTimeout(this.timeout);
+      this.timeout = setTimeout(() => (this.velocityVector = new Vector().set(0, 0)), 10);
+    });
+
+    document.addEventListener('touchmove', (event: TouchEvent) => {
+      const prevPosition = this.positionVector.copy();
+      this.position = [event.touches[0].clientX, event.touches[0].clientY];
       this.positionVector = new Vector().set(this.position[0], this.position[1]);
 
       this.velocityVector = this.positionVector.copy().sub(prevPosition);

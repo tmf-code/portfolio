@@ -11,6 +11,7 @@ const jitter = (jitterRange: number) =>
 export class HairGrid {
   grid: Hair[];
   p5Instance: p5;
+  screenWidth: number;
   constructor(screenWidth: number, screenHeight: number, p5Instance: p5) {
     const maxDimension = Math.max(screenWidth, screenHeight) * 2.5;
 
@@ -40,6 +41,7 @@ export class HairGrid {
     const color = p5Instance.color(0, 0, 0, 200);
 
     this.p5Instance = p5Instance;
+    this.screenWidth = screenWidth;
     this.grid = positions.map(
       (position, index) =>
         new Hair(
@@ -51,6 +53,7 @@ export class HairGrid {
           thickness,
           growthRates[index],
           this.p5Instance,
+          this.screenWidth,
         ),
     );
   }
