@@ -149,6 +149,9 @@ blockquote:after {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  @include respond-to(medium-screens) {
+    flex-direction: column;
+  }
   @include respond-to(handhelds) {
     flex-direction: column;
   }
@@ -156,6 +159,9 @@ blockquote:after {
 
 .headerImage{
   width:50%;
+  @include respond-to(medium-screens) {
+    width: 100%;
+  }
   @include respond-to(handhelds) {
     width: 100%;
   }
@@ -163,6 +169,10 @@ blockquote:after {
 .headerInfo{
   width:50%;
   padding-left: 1%;
+  @include respond-to(medium-screens) {
+    width: 100%;
+    padding-left: 0;
+  }
   @include respond-to(handhelds) {
     width: 100%;
     padding-left: 0;
@@ -170,5 +180,12 @@ blockquote:after {
   .description {
     margin-block-start: 0;
     margin-block-end: 0;
+    @include respond-to(medium-screens) {
+      margin-block-end: 1em;
+    }
+    @include respond-to(handhelds) {
+      margin-block-end: 1em;
+    }
+    
   }
 }
