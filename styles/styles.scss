@@ -29,8 +29,21 @@ canvas {
 }
 
 .page-content {
-  padding-left: 4%;
-  padding-right: 4%;
+  @include respond-to(handhelds) {
+    padding-left: $page-margins-medium;
+    padding-right: $page-margins-medium;
+  }
+
+  @include respond-to(medium-screens) {
+    padding-left: $page-margins-medium;
+    padding-right: $page-margins-medium;
+  }
+
+  @include respond-to(wide-screens) {
+    padding-left: $page-margins-wide;
+    padding-right: $page-margins-wide;
+  }
+
   width: 100%;
 
   color: $text-color;
