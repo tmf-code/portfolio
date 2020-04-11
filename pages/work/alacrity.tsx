@@ -1,21 +1,7 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 import { ProjectTop } from '../../components/project-top';
-import { ProjectDescription } from '../../components/project-description';
-
-export const AlacrityData: ProjectDescription = {
-  date: '2019',
-  exhibited: 'Post.Digital.Dreams, 14 Dec 2019 - 24 Jan 2020, In-between Conditions, Tbilisi.',
-  title: 'alacrity',
-  images: [
-    { src: require('images/projects/alacrity/alacrity1.png') },
-    { src: require('images/projects/alacrity/alacrity2.png') },
-    { src: require('images/projects/alacrity/alacrity3.jpg') },
-    { src: require('images/projects/alacrity/alacrity4.jpg') },
-    { src: require('images/projects/alacrity/alacrity5.jpg') },
-  ],
-  headerImage: require('images/projects/alacrity/alacrity1.png'),
-};
+import { AlacrityData } from './work-data';
 
 const Alacrity = (): React.ReactElement => {
   return (

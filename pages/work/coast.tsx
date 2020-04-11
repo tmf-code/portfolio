@@ -1,20 +1,12 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
+import { ProjectTop } from '../../components/project-top';
+import { CoastData } from './work-data';
 
-const images = [
-  { src: require('images/projects/coast/coast1.jpg') },
-  { src: require('images/projects/coast/coast2.jpg') },
-  { src: require('images/projects/coast/coast3.jpg') },
-  { src: require('images/projects/coast/coast4.jpg') },
-  { src: require('images/projects/coast/coast5.jpg') },
-  { src: require('images/projects/coast/coast6.png') },
-];
 const Coast = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>the coast was clear</h2>
-      <div className="date">2019</div>
-      <div className="exhibited">As We Know It, 29-30 June 2019, Vondelbunker, Amsterdam.</div>
+      <ProjectTop {...CoastData} />
 
       <div className="text">
         <p>
@@ -28,7 +20,7 @@ const Coast = (): React.ReactElement => {
         </p>
       </div>
 
-      <Slider images={images}></Slider>
+      <Slider {...CoastData}></Slider>
 
       <div className="text">
         <blockquote cite="">

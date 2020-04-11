@@ -1,18 +1,12 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
-
-const images = [
-  { src: require('images/projects/beep-text/beeptext1.jpg') },
-  { src: require('images/projects/beep-text/beeptext2.jpg') },
-];
+import { BeepTextData } from './work-data';
+import { ProjectTop } from '../../components/project-top';
 
 const Beeptext = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>beep text</h2>
-      <div className="date">2019</div>
-      <div className="exhibited">Alternate Perspectives coursework, ArtScience, KABK.</div>
-
+      <ProjectTop {...BeepTextData} />
       <div className="text">
         <blockquote>
           In this fast-paced world…
@@ -31,7 +25,7 @@ const Beeptext = (): React.ReactElement => {
         </blockquote>
       </div>
 
-      <Slider images={images}></Slider>
+      <Slider {...BeepTextData}></Slider>
 
       <div className="text">
         <p>

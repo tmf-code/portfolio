@@ -1,25 +1,13 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
-
-const images = [
-  { src: require('images/projects/feedself/feedself1.png') },
-  {
-    src: require('images/projects/feedself/feedself2.jpg'),
-    caption: 'Photograph by Franziska Müller Schmidt',
-  },
-  { src: require('images/projects/feedself/feedself3.jpg') },
-  { src: require('images/projects/feedself/feedself4.jpg') },
-];
+import { FeedSelfData } from './work-data';
+import { ProjectTop } from '../../components/project-top';
 
 const Feedself = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>feedself</h2>
-      <div className="date">2018</div>
-      <div className="exhibited">Hacking Nature, 29-30 June 2018, De Samenscholing, The Hague.</div>
-      <div className="exhibited">Common Inn, 18 April 2019, Het Nieuwe Instituut, Rotterdam.</div>
-
-      <Slider images={images}></Slider>
+      <ProjectTop {...FeedSelfData} />
+      <Slider {...FeedSelfData}></Slider>
 
       <div className="text">
         <p>

@@ -1,31 +1,13 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
+import { OrdinaryRamblingyData } from './work-data';
+import { ProjectTop } from '../../components/project-top';
 
-const images = [
-  { src: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg') },
-  {
-    src: require('images/projects/ordinary-rambling/ordinary-rambling2.jpg'),
-    caption: 'Photograph by Maarten Heijer',
-  },
-  {
-    src: require('images/projects/ordinary-rambling/ordinary-rambling3.jpg'),
-    caption: 'Photograph by Maarten Heijer',
-  },
-];
 const OrdinaryRambling = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>ordinary rambling</h2>
-      <div className="date">2018</div>
-      <div className="exhibited">BYOB, 29 September 2018, Nicolaikerk, Utrecht.</div>
-      <div className="exhibited">
-        Journeys into Diversity, March 2019, Bestuursgebouw, Utrecht University.
-      </div>
-      <div className="exhibited">
-        Journeys into Diversity, June 2019, Victor J. Koningsbergergebouw, Utrecht University.
-      </div>
-
-      <Slider images={images}></Slider>
+      <ProjectTop {...OrdinaryRamblingyData} />
+      <Slider {...OrdinaryRamblingyData}></Slider>
 
       <div className="text">
         <p>

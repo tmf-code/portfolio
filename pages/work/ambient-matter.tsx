@@ -1,28 +1,18 @@
 import { Slider } from '../../components/slider';
-
-const images = [
-  { src: require('images/projects/ambient-matter/ambience1.jpg'), caption: 'Image' },
-  { src: require('images/projects/ambient-matter/ambience2.jpg'), caption: 'Subject' },
-  {
-    src: require('images/projects/ambient-matter/ambience3.jpg'),
-    caption: 'Not-subject - or, a speculation on machinic ambience',
-  },
-  { src: require('images/projects/ambient-matter/ambience4.jpg') },
-];
+import { ProjectTop } from '../../components/project-top';
+import { AmbientMatterData } from './work-data';
 
 const AmbientMatter = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>ambient matter</h2>
-      <div className="date">2019</div>
-      <div className="exhibited">Work in Progress </div>
+      <ProjectTop {...AmbientMatterData} />
       <div className="text">
         As technologies like machine vision begin doing some of our perception for us, we find it
         relevant to investigate things they (and by extension us) deem unimportant. Things that are
         not rewarded during training. Task-oriented at their core, ambience is uninteresting to a
         learned machine. In our work, we turn to this ambient matter.
       </div>
-      <Slider images={images}></Slider>
+      <Slider {...AmbientMatterData}></Slider>
 
       <div className="text">
         <h4>Background</h4>

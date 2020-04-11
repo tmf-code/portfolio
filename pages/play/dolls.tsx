@@ -1,19 +1,12 @@
 import { Slider } from '../../components/slider';
-
-const images = [
-  { src: require('images/projects/dolls/dolls1.png') },
-  { src: require('images/projects/dolls/dolls2.png') },
-  { src: require('images/projects/dolls/dolls3.png') },
-];
+import { ProjectTop } from '../../components/project-top';
+import { DollsData } from '../work/work-data';
 
 const Dolls = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>dolls</h2>
-      <div className="date">2019</div>
-      <div className="exhibited">Work in progress</div>
-
-      <Slider images={images}></Slider>
+      <ProjectTop {...DollsData} />
+      <Slider {...DollsData}></Slider>
 
       <div className="text">
         <p>Play.</p>

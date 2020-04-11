@@ -1,17 +1,14 @@
 import { Slider } from '../../components/slider';
-
-const images = [{ src: require('images/projects/interpassivity/interpassivity1.jpg') }];
+import { ProjectTop } from '../../components/project-top';
+import { InterpassivityData } from './work-data';
 
 const Interpassivity = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>beyond interpassivity</h2>
-      <div className="date">2018</div>
-      <div className="exhibited">Time as Matter coursework, ArtScience, KABK.</div>
-
+      <ProjectTop {...InterpassivityData} />
       <div className="text">
         <h3>Beyond Interpassivity: a parcours to liberation from the burden of enjoyment</h3>
-        <Slider images={images}></Slider>
+        <Slider {...InterpassivityData}></Slider>
         <h4>01. The unattainable desire for nothingness</h4>
         <p>
           If a void, or place, is made, as it would in your house, it will soon be filled. An

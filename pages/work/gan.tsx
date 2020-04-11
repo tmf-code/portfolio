@@ -1,18 +1,12 @@
 import { Slider } from '../../components/slider';
+import { ProjectTop } from '../../components/project-top';
+import { GANData } from './work-data';
 
-const images = [
-  { src: require('images/projects/gan/gan1.png') },
-  { src: require('images/projects/gan/gan2.jpg') },
-  { src: require('images/projects/gan/gan3.jpg') },
-];
 const GAN = (): React.ReactElement => {
   return (
     <div className="container">
-      <h2>cephalopod crania</h2>
-      <div className="date">2019</div>
-      <div className="exhibited">Neural Networks coursework, LIACS, Leiden University.</div>
-
-      <Slider images={images}></Slider>
+      <ProjectTop {...GANData} />
+      <Slider {...GANData}></Slider>
 
       <div className="text">
         <p>
