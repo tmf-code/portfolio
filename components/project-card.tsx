@@ -19,7 +19,9 @@ const ProjectCard = ({ title, href, imgSrc, exhibited }: ProjectCardProps) => {
     <>
       <div className="projectItem">
         <div className="headerImage">
-          <img src={imgSrc} width="100%" alt={title} />
+          <a href={href}>
+            <img src={imgSrc} width="100%" alt={title} />
+          </a>
         </div>
         <div className="headerInfo">
           <a className="project-list" href={href}>
