@@ -3,7 +3,7 @@ import Slick, { Settings } from 'react-slick';
 import styles from '../styles/slider.module.scss';
 
 export type ProjectImageProps = {
-  images: ProjectImageData[];
+  images?: ProjectImageData[];
 };
 
 type ProjectImageData = {
@@ -25,6 +25,9 @@ export class Slider extends Component<ProjectImageProps> {
       autoplay: true,
       autoplaySpeed: 6000,
     };
+    if (!this.props.images) {
+      return null;
+    }
     return (
       <div className={styles['slider']}>
         <Slick {...settings}>
