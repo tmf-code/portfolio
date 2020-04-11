@@ -9,6 +9,9 @@ $heading-font-size: 24pt;
   @if $font == body {
     font-size: $body-font-size;
     letter-spacing: 0.015em;
+    @include respond-to(handhelds) {
+      letter-spacing: 0.00em;
+    }
   } @else if $font == secondary {
     font-size: $secondary-font-size;
   } @else if $font == heading {
