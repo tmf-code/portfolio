@@ -185,6 +185,8 @@ blockquote:after {
     }
     @include respond-to(handhelds) {
       margin-block-end: 1em;
+
+      @include choose-font(secondary);
     }
   }
 }

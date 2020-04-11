@@ -5,8 +5,8 @@ $footer-height: calc((30px + #{$footer-top-padding}));
 $page-margins-wide: 4%;
 $page-margins-medium: 10px;
 
-$break-small: 420px;
-$break-large: 1024px;
+$break-small: 500px;
+$break-large: 784px;
 
 @mixin respond-to($media) {
   @if $media == handhelds {
