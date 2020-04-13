@@ -18,10 +18,10 @@ const Alacrity = (): React.ReactElement => {
           the piece probes the interwoven notions of obligation and futility.
         </p>
         <p>
-          The work builds on previous research conducted by the artists, in which they structured a
-          performative reading on the motif of the ‘beep test’; the school fitness and endurance
-          test. Alacrity is an elaboration on their findings, exploring the connections between the
-          pace-keeping dimension of technology and time.
+          The work builds on <a href="/work/beep-text">previous research</a> conducted by the
+          artists, in which they structured a performative reading on the motif of the ‘beep test’;
+          the school fitness and endurance test. Alacrity is an elaboration on their findings,
+          exploring the connections between the pace-keeping dimension of technology and time.
         </p>
         <p>
           Presentation of the work was made possible thanks to the{' '}
