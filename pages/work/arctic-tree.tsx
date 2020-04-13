@@ -25,6 +25,11 @@ const ArcticTree = (): React.ReactElement => {
           and/or vault access to clone. Requiring less than 1.5KB of memory, the efficiency of this
           method as a means to reforestation speaks for itself.
         </p>
+        <p>
+          The GitHub repository for Arctic Tree can be found{' '}
+          <a href={'https://github.com/tmf-code/arctic-tree'}> here </a>. You are welcome to grow
+          your own tree.
+        </p>
         {/* <p>
           When the arctic ice has melted and trees have long gone extinct, access to open source
           trees might become important. Perhaps though, the ice on the arctic will be worth
