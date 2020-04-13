@@ -30,6 +30,11 @@ const Alacrity = (): React.ReactElement => {
       </div>
       <Video srcURL={'https://www.youtube.com/embed/Qy72OkFC7cg'} title={'Alacrity'}></Video>
       <Video srcURL={'https://www.youtube.com/embed/BsGREhdPSvY'} title={'Alacrity'}></Video>
+      <p>
+        <a href="https://stimuleringsfonds.nl/en/">
+          <img src={require('images/fund-logo.jpg')} width="30%" alt="fund-logo" />
+        </a>
+      </p>
     </div>
   );
 };
