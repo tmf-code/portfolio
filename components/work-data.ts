@@ -153,6 +153,38 @@ export const TexturesData: ProjectDescription = {
   headerImage: require('images/projects/textures/textures9.png?resize&size=600'),
 };
 
+export const ArcticTreeData: ProjectDescription = {
+  title: 'arctic tree',
+  href: 'work/arctic-tree',
+
+  date: '2020',
+  exhibited: 'Github Arctic Code Vault, Unnamed Road, Svalbard & Jan Mayen.',
+  images: [
+    { src: require('images/projects/arctic-tree/arctic-tree-readme.png') },
+    { src: require('images/projects/arctic-tree/treecountdown.png') },
+    { src: require('images/projects/arctic-tree/arctic-tree-ps1.png') },
+    { src: require('images/projects/arctic-tree/arctic-tree-ps2.png') },
+  ],
+  headerImage: require('images/projects/arctic-tree/arctic-tree-readme.png'),
+};
+
+export const FigureableData: ProjectDescription = {
+  title: 'figureable',
+  href: 'work/figureable',
+
+  date: '2020',
+  exhibited: 'Work in progress',
+  images: [
+    { src: require('images/projects/figureable/rep.jpg') },
+    { src: require('images/projects/figureable/endgame.jpg') },
+    { src: require('images/projects/figureable/hair.png') },
+    { src: require('images/projects/figureable/leg_actions.png') },
+    { src: require('images/projects/figureable/slenderman.png') },
+    { src: require('images/projects/figureable/unity3d.jpg') },
+  ],
+  headerImage: require('images/projects/figureable/rep.jpg'),
+};
+
 export const WorkDataDict = {
   AlacrityData,
   AmbientMatterData,
@@ -163,6 +195,8 @@ export const WorkDataDict = {
   InterpassivityData,
   OrdinaryRamblingyData,
   TexturesData,
+  ArcticTreeData,
+  FigureableData,
 };
 
 export const WorkDataList = Object.values(WorkDataDict);
