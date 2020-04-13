@@ -23,6 +23,17 @@ const About = (): React.ReactElement => {
           media technology, the politics of memory, (science) fiction, and critical theory.
         </p>
       </div>
+      <ul>
+        <li>Berlin, Amsterdam</li>
+        <li>
+          <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#116;&#109;&#102;&#046;&#100;&#101;&#115;&#105;&#103;&#110;">
+            &#105;&#110;&#102;&#111;&#064;&#116;&#109;&#102;&#046;&#100;&#101;&#115;&#105;&#103;&#110;
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/tmf-code">github</a>
+        </li>
+      </ul>
     </div>
   );
 };
