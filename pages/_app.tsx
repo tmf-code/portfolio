@@ -34,6 +34,7 @@ export default class MyApp extends App {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="description" content="A sample of work and play from the art duo TMF" />
           <title>{pageSEO.title} | TMF Portfolio</title>
           <script
             data-goatcounter="https://tmfportfolio.goatcounter.com/count"
