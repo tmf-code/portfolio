@@ -1,7 +1,6 @@
 import { Slider } from '../../components/slider';
 import { ProjectTop } from '../../components/project-top';
 import { FigureableData } from '../../components/work-data';
-import { ProjectImage } from '../../components/project-image';
 
 const Figureable = (): React.ReactElement => {
   return (
@@ -31,11 +30,15 @@ const Figureable = (): React.ReactElement => {
           The project is funded by the{' '}
           <a href={'https://stimuleringsfonds.nl/en'}> Creative Industries Fund NL </a>.
         </p>
-        <ProjectImage
-          src={require('../../images/projects/figureable/fund_logo_3.jpg')}
-          height={'50%'}
-          width={'50%'}
-        />
+        <p>
+          <a href="https://stimuleringsfonds.nl/en/">
+            <img
+              src={require('images/projects/figureable/fund-logo.jpg')}
+              width="15%"
+              alt="fund-logo"
+            />
+          </a>
+        </p>
       </div>
     </div>
   );
