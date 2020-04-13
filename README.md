@@ -1,3 +1,7 @@
+# TMF Portfolio
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12afee0f-7718-4b3b-b354-4349d994bf0e/deploy-status)](https://app.netlify.com/sites/tmf-portfolio/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

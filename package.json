@@ -9,7 +9,8 @@
     "export": "next export",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore .",
-    "tunnel": "lt -h \"http://serverless.social\" -p 3000"
+    "tunnel": "lt -h \"http://serverless.social\" -p 3000",
+    "open": "netlify open"
   },
   "dependencies": {
     "next": "9.3.2",
@@ -44,6 +45,7 @@
     "lint-staged": "^10.0.9",
     "localtunnel": "^2.0.0",
     "modern-normalize": "^0.6.0",
+    "netlify": "^4.0.5",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.5.7",
     "prettier": "^2.0.2",
