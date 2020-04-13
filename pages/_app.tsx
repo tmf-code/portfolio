@@ -35,6 +35,11 @@ export default class MyApp extends App {
           <meta name="theme-color" content="#ffffff" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>{pageSEO.title} | TMF Portfolio</title>
+          <script
+            data-goatcounter="https://tmfportfolio.goatcounter.com/count"
+            async
+            src="//gc.zgo.at/count.js"
+          ></script>
         </Head>
         <div className="page-content">
           <HeaderBar pathname={router.pathname}></HeaderBar>
