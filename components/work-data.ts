@@ -1,4 +1,4 @@
-import { ProjectDescription } from '../../components/project-description';
+import { ProjectDescription } from './project-description';
 
 export const AlacrityData: ProjectDescription = {
   title: 'alacrity',

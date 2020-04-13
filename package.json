@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ext .js,.ts,.jsx,.tsx --ignore-path .gitignore .",
     "tunnel": "lt -h \"http://serverless.social\" -p 3000"

@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
-import { FeedSelfData } from './work-data';
+import { FeedSelfData } from '../../components/work-data';
 import { ProjectTop } from '../../components/project-top';
 
 const Feedself = (): React.ReactElement => {

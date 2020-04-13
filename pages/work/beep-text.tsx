@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
-import { BeepTextData } from './work-data';
+import { BeepTextData } from '../../components/work-data';
 import { ProjectTop } from '../../components/project-top';
 
 const Beeptext = (): React.ReactElement => {

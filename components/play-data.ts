@@ -1,4 +1,4 @@
-import { ProjectDescription } from '../../components/project-description';
+import { ProjectDescription } from './project-description';
 
 export const DollsData: ProjectDescription = {
   date: '2019',

@@ -1,7 +1,7 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 import { ProjectTop } from '../../components/project-top';
-import { CoastData } from './work-data';
+import { CoastData } from '../../components/work-data';
 
 const Coast = (): React.ReactElement => {
   return (

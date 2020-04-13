@@ -1,4 +1,4 @@
-import { WorkDataList } from './work-data';
+import { WorkDataList } from '../../components/work-data';
 import { ProjectCard } from '../../components/project-card';
 
 const ProjectIndex = (): React.ReactElement => {

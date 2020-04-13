@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { ProjectTop } from '../../components/project-top';
-import { GANData } from './work-data';
+import { GANData } from '../../components/work-data';
 
 const GAN = (): React.ReactElement => {
   return (

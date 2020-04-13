@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
-import { OrdinaryRamblingyData } from './work-data';
+import { OrdinaryRamblingyData } from '../../components/work-data';
 import { ProjectTop } from '../../components/project-top';
 
 const OrdinaryRambling = (): React.ReactElement => {

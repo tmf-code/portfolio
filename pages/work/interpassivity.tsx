@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { ProjectTop } from '../../components/project-top';
-import { InterpassivityData } from './work-data';
+import { InterpassivityData } from '../../components/work-data';
 
 const Interpassivity = (): React.ReactElement => {
   return (

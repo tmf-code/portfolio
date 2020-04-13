@@ -1,7 +1,7 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 import { ProjectTop } from '../../components/project-top';
-import { AlacrityData } from './work-data';
+import { AlacrityData } from '../../components/work-data';
 
 const Alacrity = (): React.ReactElement => {
   return (

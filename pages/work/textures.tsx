@@ -1,7 +1,7 @@
 import { Slider } from '../../components/slider';
 import { Video } from '../../components/video';
 import { ProjectTop } from '../../components/project-top';
-import { TexturesData } from './work-data';
+import { TexturesData } from '../../components/work-data';
 
 const Textures = (): React.ReactElement => {
   return (

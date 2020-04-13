@@ -1,4 +1,4 @@
-import { PlayDataList } from './play-data';
+import { PlayDataList } from '../../components/play-data';
 import { ProjectCard } from '../../components/project-card';
 
 const ProjectIndex = (): React.ReactElement => {

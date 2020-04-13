@@ -1,6 +1,6 @@
 import { Slider } from '../../components/slider';
 import { ProjectTop } from '../../components/project-top';
-import { AmbientMatterData } from './work-data';
+import { AmbientMatterData } from '../../components/work-data';
 
 const AmbientMatter = (): React.ReactElement => {
   return (
