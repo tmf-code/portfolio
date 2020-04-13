@@ -11,6 +11,7 @@ $heading-font-size: 24pt;
     letter-spacing: 0.015em;
     @include respond-to(handhelds) {
       letter-spacing: 0.00em;
+      @include choose-font(secondary);
     }
   } @else if $font == secondary {
     font-size: $secondary-font-size;
