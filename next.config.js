@@ -5,7 +5,10 @@ const path = require('path');
 
 const nextConfig = {
   distDir: 'build',
-  webpack: (config, options) => {
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./scripts/generate-sitemap');
+    }
     config.resolve.alias.images = path.join(__dirname, 'images');
     return config;
   },
