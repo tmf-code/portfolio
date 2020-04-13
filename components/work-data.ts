@@ -13,7 +13,7 @@ export const AlacrityData: ProjectDescription = {
     { src: require('images/projects/alacrity/alacrity4.jpg') },
     { src: require('images/projects/alacrity/alacrity5.jpg') },
   ],
-  headerImage: require('images/projects/alacrity/alacrity1.png'),
+  headerImage: require('images/projects/alacrity/alacrity1.png?resize&size=600'),
 };
 
 export const AmbientMatterData: ProjectDescription = {
@@ -31,7 +31,7 @@ export const AmbientMatterData: ProjectDescription = {
     },
     { src: require('images/projects/ambient-matter/ambience4.jpg') },
   ],
-  headerImage: require('images/projects/ambient-matter/ambience1.jpg'),
+  headerImage: require('images/projects/ambient-matter/ambience1.jpg?resize&size=600'),
 };
 
 export const BeepTextData: ProjectDescription = {
@@ -44,7 +44,7 @@ export const BeepTextData: ProjectDescription = {
     { src: require('images/projects/beep-text/beeptext1.jpg') },
     { src: require('images/projects/beep-text/beeptext2.jpg') },
   ],
-  headerImage: require('images/projects/beep-text/beeptext1.jpg'),
+  headerImage: require('images/projects/beep-text/beeptext1.jpg?resize&size=600'),
 };
 
 export const CoastData: ProjectDescription = {
@@ -61,7 +61,7 @@ export const CoastData: ProjectDescription = {
     { src: require('images/projects/coast/coast5.jpg') },
     { src: require('images/projects/coast/coast6.png') },
   ],
-  headerImage: require('images/projects/coast/coast1.jpg'),
+  headerImage: require('images/projects/coast/coast1.jpg?resize&size=600'),
 };
 
 export const FeedSelfData: ProjectDescription = {
@@ -82,7 +82,7 @@ export const FeedSelfData: ProjectDescription = {
     { src: require('images/projects/feedself/feedself3.jpg') },
     { src: require('images/projects/feedself/feedself4.jpg') },
   ],
-  headerImage: require('images/projects/feedself/feedself1.png'),
+  headerImage: require('images/projects/feedself/feedself1.png?resize&size=600'),
 };
 
 export const GANData: ProjectDescription = {
@@ -96,7 +96,7 @@ export const GANData: ProjectDescription = {
     { src: require('images/projects/gan/gan2.jpg') },
     { src: require('images/projects/gan/gan3.jpg') },
   ],
-  headerImage: require('images/projects/gan/gan1.png'),
+  headerImage: require('images/projects/gan/gan1.png?resize&size=600'),
 };
 
 export const InterpassivityData: ProjectDescription = {
@@ -105,7 +105,7 @@ export const InterpassivityData: ProjectDescription = {
   date: '2018',
   exhibited: 'Time as Matter coursework, ArtScience, KABK',
   images: [{ src: require('images/projects/interpassivity/interpassivity1.jpg') }],
-  headerImage: require('images/projects/interpassivity/interpassivity1.jpg'),
+  headerImage: require('images/projects/interpassivity/interpassivity1.jpg?resize&size=600'),
 };
 
 export const OrdinaryRamblingyData: ProjectDescription = {
@@ -129,7 +129,7 @@ export const OrdinaryRamblingyData: ProjectDescription = {
       caption: 'Photograph by Maarten Heijer',
     },
   ],
-  headerImage: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg'),
+  headerImage: require('images/projects/ordinary-rambling/ordinary-rambling1.jpg?resize&size=600'),
 };
 
 export const TexturesData: ProjectDescription = {
@@ -150,7 +150,7 @@ export const TexturesData: ProjectDescription = {
     { src: require('images/projects/textures/textures7.jpg') },
     { src: require('images/projects/textures/textures8.jpg') },
   ],
-  headerImage: require('images/projects/textures/textures9.png'),
+  headerImage: require('images/projects/textures/textures9.png?resize&size=600'),
 };
 
 export const WorkDataDict = {

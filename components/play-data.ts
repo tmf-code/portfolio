@@ -10,7 +10,7 @@ export const DollsData: ProjectDescription = {
     { src: require('images/projects/dolls/dolls2.png') },
     { src: require('images/projects/dolls/dolls3.png') },
   ],
-  headerImage: require('images/projects/dolls/dolls1.png'),
+  headerImage: require('images/projects/dolls/dolls1.png?resize&size=600'),
 };
 
 export const PlayData = {
