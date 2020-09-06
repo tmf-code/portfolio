@@ -185,6 +185,19 @@ export const FigureableData: ProjectDescription = {
   headerImage: require('images/projects/figureable/rep.jpg'),
 };
 
+export const ComeShaveData: ProjectDescription = {
+  title: 'come shave with me',
+  href: 'work/come-shave',
+
+  date: '2020',
+  exhibited: 'online',
+  images: [
+    { src: require('images/projects/come-shave/rep.png') },
+    // { src: require('images/projects/figureable/endgame.png') },
+  ],
+  headerImage: require('images/projects/come-shave/rep.png'),
+};
+
 export const WorkDataDict = {
   AlacrityData,
   AmbientMatterData,
@@ -195,6 +208,7 @@ export const WorkDataDict = {
   InterpassivityData,
   OrdinaryRamblingyData,
   TexturesData,
+  ComeShaveData,
   ArcticTreeData,
   FigureableData,
 };

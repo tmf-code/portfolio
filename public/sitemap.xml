@@ -9,14 +9,6 @@
   </url>
 
   <url>
-    <loc>https://tmf.design/play/dolls</loc>
-  </url>
-
-  <url>
-    <loc>https://tmf.design/play/index</loc>
-  </url>
-
-  <url>
     <loc>https://tmf.design/work/alacrity</loc>
   </url>
 
@@ -34,6 +26,10 @@
 
   <url>
     <loc>https://tmf.design/work/coast</loc>
+  </url>
+
+  <url>
+    <loc>https://tmf.design/work/come-shave</loc>
   </url>
 
   <url>
@@ -62,5 +58,13 @@
 
   <url>
     <loc>https://tmf.design/work/textures</loc>
+  </url>
+
+  <url>
+    <loc>https://tmf.design/play/dolls</loc>
+  </url>
+
+  <url>
+    <loc>https://tmf.design/play/index</loc>
   </url>
 </urlset>
