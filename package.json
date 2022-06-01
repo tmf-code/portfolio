@@ -52,7 +52,7 @@
     "prettier": "^2.0.2",
     "responsive-loader": "^1.2.0",
     "sass": "^1.26.3",
-    "sharp": "^0.25.2",
+    "sharp": "^0.30.5",
     "typescript": "^3.8.3",
     "webp-loader": "^0.6.0"
   },
